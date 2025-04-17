@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="font-[family-name:var(--font-geist-sans)]">
+    <div className="px-20">
       <p>Hello word</p>
     </div>
   );
