@@ -1,5 +1,5 @@
 export default function Contacts() {
-    return <p>
-        this is page with contacts
-    </p>
+  return (
+    <section className="contacts h-screen">this is page with contacts</section>
+  );
 }

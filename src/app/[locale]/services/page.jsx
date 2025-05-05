@@ -1,5 +1,3 @@
 export default function Services() {
-    return <p>
-        this is page about services
-    </p>
+  return <p>this is page about services</p>;
 }
