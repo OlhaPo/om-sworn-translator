@@ -1,7 +1,8 @@
 import './globals.css';
-import { routing } from '@components/i18n/routing';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
+
+import { routing } from '@/i18n/routing';
 
 // const geistMono = Geist_Mono({
 //   variable: "--font-geist-mono",
@@ -10,7 +11,8 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
 export const metadata = {
   title: 'Олена Марченко — присяжний перекладач української мови',
-  description: 'Олена Марченко — присяжний перекладач української мови',
+  description:
+    'Переклад документів та комплексна підтримка легалізації перебування і роботи в Польщі згідно з чинним законодавством.',
 };
 
 export default async function RootLayout({ children, params }) {
@@ -23,7 +25,7 @@ export default async function RootLayout({ children, params }) {
       {/* <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       > */}
-      <body>
+      <body className="bg-custom-gradient">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

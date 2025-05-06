@@ -1,12 +1,5 @@
 @import 'tailwindcss';
 
-.about,
-.services,
-.prices,
-.contacts {
-  @apply bg-[#E6DFD5]/60;
-}
-
 @layer utilities {
   .custom-shadow {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
@@ -21,4 +14,15 @@
   .custom-img-border-radius {
     border-radius: 190px 98px;
   }
+}
+
+.about,
+.services,
+.prices,
+.contacts {
+  @apply bg-[#E6DFD5]/60;
+}
+
+li {
+  @apply hover:cursor-pointer;
 }

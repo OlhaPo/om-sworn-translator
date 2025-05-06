@@ -1,6 +1,13 @@
 {
   "HomePage": {
-    "title": "Привіт"
+    "title": "Привіт",
+    "navigation": {
+      "home": "Головна",
+      "about": "Про мене",
+      "services": "Послуги",
+      "prices": "Вартість послуг",
+      "contacts": "Контакти"
+    }
   },
   "AboutPage": {
     "title": "Це сторінка про мене"

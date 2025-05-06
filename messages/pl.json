@@ -1,6 +1,13 @@
 {
   "HomePage": {
-    "title": "Dzien dobry"
+    "title": "Dzien dobry",
+    "navigation": {
+      "home": "Strona główna",
+      "about": "O mnie",
+      "services": "Usługi",
+      "prices": "Cennik",
+      "contacts": "Kontakt"
+    }
   },
   "AboutPage": {
     "title": "Oto o mnie strona"
