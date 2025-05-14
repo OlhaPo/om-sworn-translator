@@ -2,18 +2,45 @@
 
 @layer utilities {
   .custom-shadow {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
   .bg-custom-gradient {
     background: linear-gradient(
       321.5deg,
-      rgba(133, 143, 81, 0.66) 14.31%,
+      rgba(133, 143, 81, 0.66) 5.31%,
       rgba(211, 183, 159, 0.69) 79.41%
     );
   }
-  .custom-img-border-radius {
-    border-radius: 190px 98px;
+  .shadow-img {
+    box-shadow: 3px 7px 16px 0px rgba(0, 0, 0, 0.4);
   }
+  .title-gradient {
+    background: linear-gradient(
+      90deg,
+      #8d6156 0%,
+      #a17a69 10%,
+      #ba9b87 20%,
+      #d5bba4 35%,
+      #ecd9bb 50%,
+      #e9d3b7 60%,
+      #dbc1a9 70%,
+      #d3b69c 80%,
+      #d1af92 90%,
+      #cea989 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* .outline-title {
+    font-family: sans-serif;
+    color: white;
+    text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000;
+  } */
 }
 
 .about,

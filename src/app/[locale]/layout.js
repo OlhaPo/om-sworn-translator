@@ -1,13 +1,57 @@
 import './globals.css';
+import {
+  Inter,
+  Bad_Script,
+  Marck_Script,
+  Playfair_Display,
+  El_Messiri,
+  Ballet,
+  Great_Vibes,
+} from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
+import Header from '@/components/common/Header';
 import { routing } from '@/i18n/routing';
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const inter = Inter({
+  variable: '--font-inter',
+  subsets: ['latin', 'cyrillic'],
+});
+
+const bad_script = Bad_Script({
+  variable: '--font-bad-script',
+  subsets: ['latin', 'cyrillic'],
+  weight: '400',
+});
+
+const marck_script = Marck_Script({
+  variable: '--font-marck-script',
+  subsets: ['latin', 'cyrillic'],
+  weight: '400',
+});
+
+const playfair_display = Playfair_Display({
+  variable: '--font-playfair-display',
+  subsets: ['latin', 'cyrillic'],
+  weight: '400',
+});
+
+const el_messiri = El_Messiri({
+  variable: '--font-el-messiri',
+  subsets: ['latin', 'cyrillic'],
+});
+
+const great_vibes = Great_Vibes({
+  variable: '--font-great-vibes',
+  subsets: ['latin'],
+  weight: '400',
+});
+
+const ballet = Ballet({
+  variable: '--font-ballet',
+  subsets: ['latin'],
+});
 
 export const metadata = {
   title: 'Олена Марченко — присяжний перекладач української мови',
@@ -21,12 +65,14 @@ export default async function RootLayout({ children, params }) {
     notFound();
   }
   return (
-    <html lang={locale}>
-      {/* <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > */}
-      <body className="bg-custom-gradient">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+    <html lang={locale} className="min-h-full">
+      <body
+        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${marck_script.variable} ${el_messiri.variable} ${playfair_display.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-full`}
+      >
+        <NextIntlClientProvider>
+          <Header />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
