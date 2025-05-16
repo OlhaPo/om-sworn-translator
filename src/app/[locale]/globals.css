@@ -4,6 +4,9 @@
   .custom-shadow {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   }
+  .custom-shadow-mobile {
+    box-shadow: 0px 0px 10px 0px rgba(244, 236, 214, 0.8);
+  }
   .bg-custom-gradient {
     background: linear-gradient(
       321.5deg,

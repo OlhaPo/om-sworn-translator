@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { HiOutlineMenu } from 'react-icons/hi';
@@ -17,8 +16,8 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="custom-shadow relative bg-[#A98573] text-white">
-      <div className="w-full hidden md:flex md:justify-between md:py-6 md:max-w-[1200px] md:mx-auto">
+    <nav className="custom-shadow-mobile md:custom-shadow relative bg-white/60 md:bg-[#A98573] text-white">
+      <div className="w-full hidden md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
         <ul className="flex text-[16px]">
           <li>UK </li>
           <span className="px-2">|</span>
@@ -32,15 +31,16 @@ export default function Header() {
           ))}
         </ul>
       </div>
-      <div className="flex justify-between px-8 py-2">
-        <Image
-          src="/logo.svg"
-          alt="logo"
-          width={100}
-          height={100}
-          className="md:hidden"
-        />
-        <button onClick={handleMobileMenu} className="md:hidden">
+
+      <div className="md:hidden flex justify-between px-8 py-4 text-[#4A3F35]">
+        <p
+          className="text-[24px] text-[#4A3F35] text-center leading-7 text-shadow-sm"
+          style={{ fontFamily: 'var(--font-great-vibes)' }}
+        >
+          Законність відкриває двері <br />
+          до&nbsp;можливостей
+        </p>
+        <button onClick={handleMobileMenu}>
           <HiOutlineMenu size={30} />
         </button>
       </div>
