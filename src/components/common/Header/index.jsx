@@ -16,7 +16,7 @@ export default function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="custom-shadow-mobile md:custom-shadow relative bg-white/60 md:bg-[#A98573] text-white">
+    <nav className="custom-shadow relative bg-[#A98573] text-white">
       <div className="w-full hidden md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
         <ul className="flex text-[16px]">
           <li>UK </li>
@@ -32,23 +32,22 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className="md:hidden flex justify-between px-8 py-4 text-[#4A3F35]">
+      <div className="md:hidden flex justify-between items-center py-4 px-8">
         <p
-          className="text-[24px] text-[#4A3F35] text-center leading-7 text-shadow-sm"
+          className="text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2"
           style={{ fontFamily: 'var(--font-great-vibes)' }}
         >
-          Законність відкриває двері <br />
-          до&nbsp;можливостей
+          Законність відкриває двері до&nbsp;можливостей
         </p>
         <button onClick={handleMobileMenu}>
-          <HiOutlineMenu size={30} />
+          <HiOutlineMenu size={27} />
         </button>
       </div>
 
       {isMobileMenuOpen && (
         <div className="flex flex-col items-center justify-center">
           <IoCloseOutline size={30} />
-          <ul className="flex flex-col text-[16px] uppercase">
+          <ul className="flex flex-col text-[16px] uppercase gap-5">
             {links.map((link) => (
               <li key={link.href}>
                 <Link href={link.href}>{link.label}</Link>
