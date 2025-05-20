@@ -31,7 +31,7 @@ export default function MainPage() {
           &quot; Законність відкриває двері до&nbsp;можливостей &quot;
         </p>
       </div>
-      <div className="w-[80%] mt-10 md:my-0 mx-auto md:mx-0 block md:w-[40%]">
+      <div className="w-[80%] m-10 md:my-0 mx-auto md:mx-0 block md:w-[40%]">
         <Image
           src="/hero-img.jpg"
           width={536}

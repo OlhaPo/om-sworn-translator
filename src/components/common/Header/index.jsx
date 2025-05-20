@@ -1,22 +1,32 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
-import { HiOutlineMenu } from 'react-icons/hi';
-import { IoCloseOutline } from 'react-icons/io5';
+import { useState, useEffect } from 'react';
+import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
 import useNavLinks from './hooks/useNavLinks';
+import useSocialLinks from './hooks/useSocialLinks';
 
 export default function Header() {
   const links = useNavLinks();
+  const socialLinks = useSocialLinks();
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMobileMenuOpen]);
 
   const handleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="custom-shadow relative bg-[#A98573] text-white">
+    <nav className="custom-shadow bg-[#A98573] text-white">
       <div className="w-full hidden md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
         <ul className="flex text-[16px]">
           <li>UK </li>
@@ -40,24 +50,48 @@ export default function Header() {
           Законність відкриває двері до&nbsp;можливостей
         </p>
         <button onClick={handleMobileMenu}>
-          <HiOutlineMenu size={27} />
+          <IoMenu size={27} />
         </button>
       </div>
 
       {isMobileMenuOpen && (
-        <div className="flex flex-col items-center justify-center">
-          <IoCloseOutline size={30} />
-          <ul className="flex flex-col text-[16px] uppercase gap-5">
+        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-8 h-screen">
+          <div className="flex justify-between items-start">
+            <Image
+              src="/logo.svg"
+              alt="logo"
+              width={80}
+              height={80}
+              className="ml-[-12px]"
+            />
+            <button onClick={handleMobileMenu} className="mt-[9px]">
+              <IoCloseOutline size={27} />
+            </button>
+          </div>
+          <ul className="flex flex-col text-lg gap-3 mt-8">
             {links.map((link) => (
               <li key={link.href}>
                 <Link href={link.href}>{link.label}</Link>
               </li>
             ))}
           </ul>
-          <ul className="flex text-[16px]">
+          <ul className="flex text-[16px] mt-8">
             <li>UK </li>
             <span className="px-2">|</span>
             <li>PL</li>
+          </ul>
+          <ul className="flex gap-5 mt-12">
+            {socialLinks.map((socialLink) => (
+              <li key={socialLink.href}>
+                <a
+                  href={socialLink.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {socialLink.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       )}
