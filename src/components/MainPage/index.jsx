@@ -1,6 +1,8 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function MainPage() {
+  const t = useTranslations('HomePage');
   return (
     <section className="flex flex-col wrap md:flex-row justify-center md:justify-between md:my-16 md:max-w-[1200px] md:mx-auto">
       <div className="md:w-1/2 flex flex-col items-center">
@@ -15,20 +17,28 @@ export default function MainPage() {
           className="text-4xl md:text-6xl md:mt-0 mt-6 mb-3 text-[#704B40] custom-text-shadow text-center order-2"
           style={{ fontFamily: 'var(--font-el-messiri)' }}
         >
-          <span style={{ fontFamily: 'var(--font-ballet)' }}>O</span>лена{' '}
-          <span style={{ fontFamily: 'var(--font-ballet)' }}>M</span>арченко
+          <span style={{ fontFamily: 'var(--font-ballet)' }}>
+            {t('first-letter-name')}
+          </span>
+          {t('title-name')} {''}
+          <span style={{ fontFamily: 'var(--font-ballet)' }}>
+            {t('first-letter-surname')}
+          </span>{' '}
+          {t('title-surname')}
         </h1>
         <h2
           className="text-2xl md:text-4xl text-[#704B40] md:mb-12 text-center order-3 leading-7 md:leading-10"
           style={{ fontFamily: 'var(--font-el-messiri)' }}
         >
-          присяжний перекладач <br /> української мови
+          {t.rich('subtitle', {
+            br: () => <br />,
+          })}
         </h2>
         <p
           className="hidden md:block md:text-4xl md:py-0 text-[#926D4C] md:mt-2 tracking-wide order-1 md:order-4"
           style={{ fontFamily: 'var(--font-great-vibes)' }}
         >
-          &quot; Законність відкриває двері до&nbsp;можливостей &quot;
+          &quot; {t('quote')} &quot;
         </p>
       </div>
       <div className="w-[80%] m-10 md:my-0 mx-auto md:mx-0 block md:w-[40%]">

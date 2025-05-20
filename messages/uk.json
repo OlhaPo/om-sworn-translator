@@ -1,6 +1,11 @@
 {
   "HomePage": {
-    "title": "Привіт",
+    "title-name": "лена",
+    "first-letter-name": "O",
+    "title-surname": "арченко",
+    "first-letter-surname": "M",
+    "subtitle": "присяжний перекладач<br></br>української мови",
+    "quote": "Законність відкриває двері до&nbsp;можливостей",
     "navigation": {
       "home": "Головна",
       "about": "Про мене",

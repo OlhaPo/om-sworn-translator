@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
@@ -11,6 +12,7 @@ import useSocialLinks from './hooks/useSocialLinks';
 export default function Header() {
   const links = useNavLinks();
   const socialLinks = useSocialLinks();
+  const t = useTranslations('HomePage');
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -47,7 +49,7 @@ export default function Header() {
           className="text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2"
           style={{ fontFamily: 'var(--font-great-vibes)' }}
         >
-          Законність відкриває двері до&nbsp;можливостей
+          {t('quote')}
         </p>
         <button onClick={handleMobileMenu}>
           <IoMenu size={27} />
