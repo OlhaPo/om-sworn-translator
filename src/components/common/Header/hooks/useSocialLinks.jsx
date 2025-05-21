@@ -4,7 +4,7 @@ import {
   FACEBOOK_LINK,
   INSTAGRAM_LINK,
   VIBER_LINK,
-} from '@/components/constants/contacts';
+} from '@/app/constants/contacts';
 
 const useSocialLinks = () => {
   const socialLinks = [

@@ -76,7 +76,9 @@ export default function Header() {
           <ul className="flex flex-col text-lg gap-3 mt-8">
             {links.map((link) => (
               <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href} onClick={handleMobileMenu}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
