@@ -32,6 +32,7 @@ const eslintConfig = [
       'no-unused-vars': ['warn'],
       'react/jsx-uses-react': 'off',
       'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
       'import/order': [
         'error',
         {
@@ -52,6 +53,15 @@ const eslintConfig = [
     settings: {
       react: {
         version: 'detect',
+      },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx'],
+        },
+        alias: {
+          map: [['@', './src']],
+          extensions: ['.js', '.jsx'],
+        },
       },
     },
   },

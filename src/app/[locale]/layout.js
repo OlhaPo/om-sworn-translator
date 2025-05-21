@@ -55,7 +55,7 @@ export default async function RootLayout({ children, params }) {
       <body
         className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${el_messiri.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-full`}
       >
-        <NextIntlClientProvider>
+        <NextIntlClientProvider locale={locale}>
           <Header />
           {children}
         </NextIntlClientProvider>

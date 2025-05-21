@@ -6,6 +6,8 @@ import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+
 import useNavLinks from './hooks/useNavLinks';
 import useSocialLinks from './hooks/useSocialLinks';
 
@@ -29,12 +31,8 @@ export default function Header() {
   };
   return (
     <nav className="custom-shadow bg-[#A98573] text-white">
-      <div className="w-full hidden md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
-        <ul className="flex text-[16px]">
-          <li>UK </li>
-          <span className="px-2">|</span>
-          <li>PL</li>
-        </ul>
+      <div className="w-full hidden items-center md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
+        <LanguageSwitcher />
         <ul className="flex text-[16px] gap-20 uppercase">
           {links.map((link) => (
             <li key={link.href}>
@@ -82,11 +80,7 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <ul className="flex text-[16px] mt-8">
-            <li>UK </li>
-            <span className="px-2">|</span>
-            <li>PL</li>
-          </ul>
+          <LanguageSwitcher />
           <ul className="flex gap-5 mt-12">
             {socialLinks.map((socialLink) => (
               <li key={socialLink.href}>
