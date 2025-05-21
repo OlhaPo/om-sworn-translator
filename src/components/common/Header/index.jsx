@@ -51,7 +51,7 @@ export default function Header() {
         >
           {t('quote')}
         </p>
-        <button onClick={handleMobileMenu}>
+        <button onClick={handleMobileMenu} className="hover:text-[#422F27]">
           <IoMenu size={27} />
         </button>
       </div>
@@ -66,7 +66,10 @@ export default function Header() {
               height={80}
               className="ml-[-12px]"
             />
-            <button onClick={handleMobileMenu} className="mt-[9px]">
+            <button
+              onClick={handleMobileMenu}
+              className="mt-[9px] hover:text-[#422F27]"
+            >
               <IoCloseOutline size={27} />
             </button>
           </div>
