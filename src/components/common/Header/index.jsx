@@ -1,12 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { Link } from '@/i18n/navigation';
 
 import useNavLinks from './hooks/useNavLinks';
 import useSocialLinks from './hooks/useSocialLinks';
@@ -49,7 +49,10 @@ export default function Header() {
         >
           {t('quote')}
         </p>
-        <button onClick={handleMobileMenu} className="hover:text-[#422F27]">
+        <button
+          onClick={handleMobileMenu}
+          className="hover:text-[#422F27] transition duration-300"
+        >
           <IoMenu size={27} />
         </button>
       </div>
@@ -66,15 +69,19 @@ export default function Header() {
             />
             <button
               onClick={handleMobileMenu}
-              className="mt-[9px] hover:text-[#422F27]"
+              className="mt-[9px] hover:text-[#422F27] transition duration-300"
             >
               <IoCloseOutline size={27} />
             </button>
           </div>
-          <ul className="flex flex-col text-lg gap-3 mt-8">
+          <ul className="flex flex-col text-lg gap-3 my-8">
             {links.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} onClick={handleMobileMenu}>
+                <Link
+                  href={link.href}
+                  onClick={handleMobileMenu}
+                  className="block"
+                >
                   {link.label}
                 </Link>
               </li>

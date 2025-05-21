@@ -54,5 +54,5 @@
 }
 
 li {
-  @apply hover:cursor-pointer hover:text-[#422F27];
+  @apply hover:cursor-pointer hover:text-[#422F27] active:text-[#422F27] transition duration-300;
 }
