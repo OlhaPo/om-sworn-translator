@@ -44,6 +44,24 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  .legal-quote {
+    font-family: var(--font-great-vibes);
+  }
+
+  .calligraphy {
+    display: block;
+  }
+
+  .calligraphy::first-letter {
+    font-family: var(--font-ballet);
+    font-size: 120%;
+  }
+
+  ul.mobile-nav-menu li li {
+    padding-left: 8px;
+    padding-top: 4px;
+  }
 }
 
 .about,
@@ -53,6 +71,6 @@
   @apply bg-[#E6DFD5]/60;
 }
 
-li {
+.hover-state {
   @apply hover:cursor-pointer hover:text-[#422F27] active:text-[#422F27] transition duration-300;
 }

@@ -14,17 +14,12 @@ export default function MainPage() {
           className="mx-auto mt-8 md:mt-[-25px] md:w-[195px] md:h-[195px] md:mb-12 block order-2 md:order-1"
         />
         <h1
-          className="text-4xl md:text-6xl md:mt-0 mt-6 mb-3 text-[#704B40] custom-text-shadow text-center order-2"
+          className="flex flex-wrap justify-center gap-4 text-4xl md:text-6xl md:mt-0 mt-6 mb-3 text-[#704B40] custom-text-shadow text-center order-2"
           style={{ fontFamily: 'var(--font-el-messiri)' }}
         >
-          <span style={{ fontFamily: 'var(--font-ballet)' }}>
-            {t('first-letter-name')}
-          </span>
-          {t('title-name')} {''}
-          <span style={{ fontFamily: 'var(--font-ballet)' }}>
-            {t('first-letter-surname')}
-          </span>{' '}
-          {t('title-surname')}
+          <span className="calligraphy">{t('title-name')}</span>
+          {''}
+          <span className="calligraphy">{t('title-surname')}</span>
         </h1>
         <h2
           className="text-2xl md:text-4xl text-[#704B40] md:mb-12 text-center order-3 leading-7 md:leading-10"
@@ -34,10 +29,7 @@ export default function MainPage() {
             br: () => <br />,
           })}
         </h2>
-        <p
-          className="hidden md:block md:text-4xl md:py-0 text-[#926D4C] md:mt-2 tracking-wide order-1 md:order-4"
-          style={{ fontFamily: 'var(--font-great-vibes)' }}
-        >
+        <p className="legal-quote hidden md:block md:text-4xl md:py-0 text-[#926D4C] md:mt-2 tracking-wide order-1 md:order-4">
           &quot; {t('quote')} &quot;
         </p>
       </div>

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import NavDropdown from '@/components/NavDropdown';
 import { Link } from '@/i18n/navigation';
 
 import useNavLinks from './hooks/useNavLinks';
@@ -29,30 +30,55 @@ export default function Header() {
   const handleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const renderMobileNavItem = (link) => {
+    return (
+      <li key={link.href}>
+        {link.href ? (
+          <Link
+            href={link.href}
+            onClick={handleMobileMenu}
+            className="block hover-state"
+          >
+            {link.label}
+          </Link>
+        ) : (
+          <span>{link.label}</span>
+        )}
+
+        {link.children && (
+          <ul>{link.children?.map((child) => renderMobileNavItem(child))}</ul>
+        )}
+      </li>
+    );
+  };
+
   return (
     <nav className="custom-shadow bg-[#A98573] text-white">
       <div className="w-full hidden items-center md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
         <LanguageSwitcher />
         <ul className="flex text-[16px] gap-20 uppercase">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link href={link.href}>{link.label}</Link>
-            </li>
-          ))}
+          {links.map((link, i) =>
+            link.isDropdownMenu ? (
+              <li key={i}>
+                <NavDropdown link={link} />
+              </li>
+            ) : (
+              <li key={link.href}>
+                <Link href={link.href} className="hover-state">
+                  {link.label}
+                </Link>
+              </li>
+            )
+          )}
         </ul>
       </div>
 
       <div className="md:hidden flex justify-between items-center py-4 px-8">
-        <p
-          className="text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2"
-          style={{ fontFamily: 'var(--font-great-vibes)' }}
-        >
+        <p className="legal-quote text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2">
           {t('quote')}
         </p>
-        <button
-          onClick={handleMobileMenu}
-          className="hover:text-[#422F27] transition duration-300"
-        >
+        <button onClick={handleMobileMenu} className="hover-state">
           <IoMenu size={27} />
         </button>
       </div>
@@ -67,30 +93,17 @@ export default function Header() {
               height={80}
               className="ml-[-12px]"
             />
-            <button
-              onClick={handleMobileMenu}
-              className="mt-[9px] hover:text-[#422F27] transition duration-300"
-            >
+            <button onClick={handleMobileMenu} className="mt-[9px] hover-state">
               <IoCloseOutline size={27} />
             </button>
           </div>
-          <ul className="flex flex-col text-lg gap-3 my-8">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={handleMobileMenu}
-                  className="block"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
+          <ul className="mobile-nav-menu flex flex-col text-lg gap-3 my-8">
+            {links.map((link) => renderMobileNavItem(link))}
           </ul>
           <LanguageSwitcher />
           <ul className="flex gap-5 mt-12">
             {socialLinks.map((socialLink) => (
-              <li key={socialLink.href}>
+              <li key={socialLink.href} className="hover-state">
                 <a
                   href={socialLink.href}
                   target="_blank"

@@ -6,7 +6,14 @@ const useNavLinks = () => {
   const navLinks = [
     { label: t('home'), href: '/' },
     { label: t('about'), href: '/about' },
-    { label: t('services'), href: '/services' },
+    {
+      label: t('services'),
+      isDropdownMenu: true,
+      children: [
+        { label: t('translations'), href: '/translations' },
+        { label: t('legalization'), href: '/legalization' },
+      ],
+    },
     { label: t('prices'), href: '/prices' },
     { label: t('contacts'), href: '/contacts' },
   ];

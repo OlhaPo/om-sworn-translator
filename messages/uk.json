@@ -1,15 +1,15 @@
 {
   "HomePage": {
-    "title-name": "лена",
-    "first-letter-name": "O",
-    "title-surname": "арченко",
-    "first-letter-surname": "M",
+    "title-name": "Oлена",
+    "title-surname": "Mарченко",
     "subtitle": "присяжний перекладач<br></br>української мови",
     "quote": "Законність відкриває двері до можливостей",
     "navigation": {
       "home": "Головна",
       "about": "Про мене",
       "services": "Послуги",
+      "translations": "Переклади",
+      "legalization": "Легалізація",
       "prices": "Вартість послуг",
       "contacts": "Контакти"
     }

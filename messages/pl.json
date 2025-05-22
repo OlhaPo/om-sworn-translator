@@ -1,15 +1,15 @@
 {
   "HomePage": {
-    "title-name": "lena",
-    "first-letter-name": "O",
-    "title-surname": "archenko",
-    "first-letter-surname": "M",
+    "title-name": "Olena",
+    "title-surname": "Marchenko",
     "subtitle": "tłumacz przysięgły<br></br>języka ukraińskiego",
     "quote": "Legalność otwiera drzwi do możliwości",
     "navigation": {
       "home": "Strona główna",
       "about": "O mnie",
       "services": "Usługi",
+      "translations": "Tłumaczenia",
+      "legalization": "Legalizacja",
       "prices": "Cennik",
       "contacts": "Kontakt"
     }

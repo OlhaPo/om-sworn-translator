@@ -17,7 +17,7 @@ export default function LanguageSwitcher() {
 
   return (
     <ul className="flex text-[16px]">
-      <li>
+      <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('uk')}
           className={locale === 'uk' ? 'font-bold' : ''}
@@ -26,7 +26,7 @@ export default function LanguageSwitcher() {
         </button>{' '}
       </li>{' '}
       <span className="px-2">|</span>
-      <li>
+      <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('pl')}
           className={locale === 'pl' ? 'font-bold' : ''}
