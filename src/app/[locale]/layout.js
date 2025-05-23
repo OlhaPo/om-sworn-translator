@@ -9,6 +9,7 @@ import {
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
+import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
 import { routing } from '@/i18n/routing';
 
@@ -53,11 +54,12 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className="min-h-full">
       <body
-        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${el_messiri.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-full`}
+        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${el_messiri.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between gap-4`}
       >
         <NextIntlClientProvider locale={locale}>
           <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -10,15 +10,18 @@ export default function NavDropdown({ link }) {
   return (
     <DropdownMenu.Root open={isOpen} onOpenChange={(val) => setIsOpen(val)}>
       <DropdownMenu.Trigger asChild>
-        <span className="flex hover:cursor-pointer hover:text-[#422F27] active:text-[#422F27] transition duration-300">
+        <span className="flex hover-state">
           {link.label} <MdArrowDropDown size={30} className="mt-[-4px]" />
         </span>
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="bg-[#A98573] uppercase pt-2 text-white text-[16px] px-3">
+        <DropdownMenu.Content className="bg-[#A98573] uppercase pt-2 2xl:pt-4 text-white text-[16px] 2xl:text-xl 3xl:text-2xl px-3 2xl:px-4">
           {link.children.map((item, i) => (
-            <DropdownMenu.Item key={i} className="outline-0 pb-3 hover-state">
+            <DropdownMenu.Item
+              key={i}
+              className="outline-0 pb-3 2xl:pb-4 hover-state"
+            >
               <Link href={item.href} onClick={() => setIsOpen(false)}>
                 {item.label}
               </Link>

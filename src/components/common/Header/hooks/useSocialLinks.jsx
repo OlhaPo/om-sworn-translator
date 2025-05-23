@@ -9,7 +9,10 @@ import {
 const useSocialLinks = () => {
   const socialLinks = [
     { label: <FaFacebook size={25} />, href: FACEBOOK_LINK },
-    { label: <FaInstagram size={25} />, href: INSTAGRAM_LINK },
+    {
+      label: <FaInstagram size={25} />,
+      href: INSTAGRAM_LINK,
+    },
     { label: <FaViber size={25} />, href: VIBER_LINK },
   ];
   return socialLinks;

@@ -61,11 +61,19 @@
   ul.mobile-nav-menu li li {
     padding-left: 8px;
     padding-top: 4px;
+    display: flex;
+  }
+
+  ul.mobile-nav-menu li li::before {
+    content: '> ';
+    color: #ffffff;
+    margin-right: 4px;
   }
 }
 
 .about,
-.services,
+.translations,
+.legalization,
 .prices,
 .contacts {
   @apply bg-[#E6DFD5]/60;

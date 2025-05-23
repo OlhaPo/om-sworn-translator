@@ -43,7 +43,7 @@ export default function Header() {
             {link.label}
           </Link>
         ) : (
-          <span>{link.label}</span>
+          <span>{link.label}:</span>
         )}
 
         {link.children && (
@@ -55,9 +55,9 @@ export default function Header() {
 
   return (
     <nav className="custom-shadow bg-[#A98573] text-white">
-      <div className="w-full hidden items-center md:flex md:justify-between py-6 md:max-w-[1200px] md:mx-auto">
+      <div className="w-full hidden items-center md:flex md:justify-between py-6 3xl:py-8 mx-auto max-w-[1200px] 2xl:max-w-[1400px]">
         <LanguageSwitcher />
-        <ul className="flex text-[16px] gap-20 uppercase">
+        <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-20 2xl:gap-22 uppercase">
           {links.map((link, i) =>
             link.isDropdownMenu ? (
               <li key={i}>
