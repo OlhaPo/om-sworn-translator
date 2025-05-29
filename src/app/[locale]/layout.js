@@ -54,7 +54,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className="min-h-full">
       <body
-        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${el_messiri.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between gap-4`}
+        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${el_messiri.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
       >
         <NextIntlClientProvider locale={locale}>
           <Header />

@@ -14,7 +14,15 @@
       "contacts": "Kontakt"
     }
   },
-  "AboutPage": {
-    "title": "Oto o mnie strona"
+  "AboutMePage": {
+    "section-title": "Trzy powody współpracować ze mną",
+    "experience-title": "Duże doświadczenie i skuteczność",
+    "experience-descriprion": "Ponad 10 lat doświadczenia i skuteczna realizacja zadań (ponad 93% wszystkich zleceń).",
+    "task-execution-title": "Szybkość realizacji zadań",
+    "task-execution-descriprion": "Pracujemy zgodnie z obowiązującym prawem i podchodzimy indywidualnie do każdego klienta, gwarantując szybkość, bezpieczeństwo i przejrzystość procedur.",
+    "qualification-title": "Kwalifikacje",
+    "qualification-descriprion-1": "magister prawa;",
+    "qualification-descriprion-2": "licencjonowany tłumacz przysięgły języka ukraińskiego;",
+    "qualification-descriprion-3": "certyfikowany specjalista w zakresie legalizacji: \"cudzoziemcy w Polsce\""
   }
 }

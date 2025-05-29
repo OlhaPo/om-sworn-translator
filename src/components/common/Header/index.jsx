@@ -54,7 +54,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="custom-shadow bg-[#A98573] text-white">
+    <nav className="custom-shadow bg-[#A98573] text-white z-1000">
       <div className="w-full hidden items-center md:flex md:justify-between py-6 3xl:py-8 mx-auto max-w-[1200px] 2xl:max-w-[1400px]">
         <LanguageSwitcher />
         <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-20 2xl:gap-22 uppercase">
