@@ -14,7 +14,7 @@ export default function MainPage() {
           className="mx-auto mt-8 md:mt-[-25px] md:w-[195px] md:h-[195px] 3xl:w-[210px] 3xl:h-[210px] md:mb-12 block order-2 md:order-1"
         />
         <h1
-          className="flex flex-wrap justify-center gap-4 text-5xl md:text-6xl 2xl:text-7xl md:mt-0 mt-6 mb-3 text-[#704B40] custom-text-shadow text-center order-2"
+          className="flex flex-wrap justify-center gap-4 text-4xl md:text-6xl 2xl:text-7xl md:mt-0 mt-6 mb-3 text-[#704B40] custom-text-shadow text-center order-2"
           style={{ fontFamily: 'var(--font-el-messiri)' }}
         >
           {t('title-name')} {t('title-surname')}
