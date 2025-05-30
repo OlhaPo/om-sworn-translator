@@ -49,7 +49,7 @@ export default function AboutPage() {
                 className="block mx-auto md:w-[65px] md:h-[65px]"
               />
               <h3
-                className="text-xl mt-6 mb-2 text-[#704B40] font-medium"
+                className="text-lg md:text-xl mt-6 mb-2 text-[#704B40] font-medium"
                 style={{ fontFamily: 'var(--font-el-messiri)' }}
               >
                 {data.title}

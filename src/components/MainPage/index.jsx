@@ -14,13 +14,13 @@ export default function MainPage() {
           className="mx-auto mt-8 md:mt-[-25px] md:w-[195px] md:h-[195px] 3xl:w-[210px] 3xl:h-[210px] md:mb-12 block order-2 md:order-1"
         />
         <h1
-          className="flex flex-wrap justify-center gap-4 text-4xl md:text-6xl 2xl:text-7xl md:mt-0 mt-6 mb-4 md:mb-5 text-[#704B40] custom-text-shadow text-center order-2 tracking-wide"
+          className="flex flex-wrap justify-center gap-4 text-4xl md:text-6xl 2xl:text-7xl md:mt-0 mt-6 mb-4 md:mb-5 text-[#704B40] custom-text-shadow text-center order-2 md:tracking-wide"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('title-name')} {t('title-surname')}
         </h1>
         <h2
-          className="text-2xl md:text-4xl text-[#704B40] md:mb-12 text-center order-3 leading-7 md:leading-10 tracking-wide"
+          className="text-2xl md:text-4xl text-[#704B40] md:mb-12 text-center order-3 leading-7 md:leading-10 md:tracking-wide"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t.rich('subtitle', {
