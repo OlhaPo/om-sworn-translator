@@ -32,15 +32,14 @@ export default function AboutPage() {
         >
           {t('section-title')}
         </h2>
-        <div
-          className={`${
-            isVisibleCard ? 'about-me-card-animate' : 'about-me-card-hidden'
-          } flex flex-wrap justify-between mb-15 md:mt-0 transition-opacity`}
-        >
-          {aboutPageData.map((data) => (
+        <div className="flex flex-wrap justify-between mb-15 md:mt-0 transition-opacity">
+          {aboutPageData.map((data, index) => (
             <div
-              className="mt-10 md:mt-15 custom-shadow-card rounded-md px-4 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:w-[30%]"
+              className={`${
+                isVisibleCard ? 'about-me-card-animate' : 'about-me-card-hidden'
+              } mt-10 md:mt-15 custom-shadow-card rounded-md px-4 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:w-[30%]`}
               key={data.imgUrl}
+              style={{ transitionDelay: `${index * 800}ms` }}
             >
               <Image
                 src={data.imgUrl}
