@@ -28,7 +28,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-[1200px] 2xl:max-w-[1400px] px-8 md:px-0">
         <h2
           className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest mt-15 md:mt-0 md:mb-5 uppercase md:normal-case font-medium md:font-light"
-          style={{ fontFamily: 'var(--font-el-messiri)' }}
+          style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('section-title')}
         </h2>
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 className="block mx-auto md:w-[65px] md:h-[65px]"
               />
               <h3
-                className="text-xl md:text-2xl mt-6 mb-2 text-[#704B40] font-semibold"
+                className="text-xl mt-6 mb-2 text-[#704B40] font-medium"
                 style={{ fontFamily: 'var(--font-el-messiri)' }}
               >
                 {data.title}
