@@ -54,7 +54,7 @@ export default function Header() {
   };
 
   return (
-    <nav className="custom-shadow bg-[#A98573] text-white z-1000">
+    <nav className="custom-shadow bg-[#A98573] text-white">
       <div className="w-full hidden items-center md:flex md:justify-between py-6 3xl:py-8 mx-auto max-w-[1200px] 2xl:max-w-[1400px]">
         <LanguageSwitcher />
         <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-20 2xl:gap-22 uppercase">
@@ -74,7 +74,7 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className="md:hidden flex justify-between items-center py-4 px-8">
+      <div className="md:hidden flex justify-between items-center py-4 px-8  z-1000">
         <p className="legal-quote text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2">
           {t('quote')}
         </p>
@@ -84,7 +84,7 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-8 h-screen">
+        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-8 h-screen z-1000">
           <div className="flex justify-between items-start">
             <Image
               src="/logo.svg"

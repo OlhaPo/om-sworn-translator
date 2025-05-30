@@ -24,7 +24,7 @@ export default function AboutPage() {
   );
 
   return (
-    <div className="about flex flex-col md:flex-row flex-grow items-center z-10">
+    <div className="about flex flex-col md:flex-row flex-grow items-center">
       <div className="mx-auto max-w-[1200px] 2xl:max-w-[1400px] px-8 md:px-0">
         <h2
           className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest mt-15 md:mt-0 md:mb-5 uppercase md:normal-case font-medium md:font-light"
