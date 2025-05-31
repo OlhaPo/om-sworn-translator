@@ -1,7 +1,7 @@
 export default function Legalization() {
   return (
     <div className="legalization flex flex-col md:flex-row flex-grow">
-      <div className="mx-auto max-w-[1200px] my-15 md:my-20">
+      <div className="mx-auto max-w-[1200px] my-15 md:my-20  px-8 md:px-0">
         <h2
           className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mb-5 md:mb-10 uppercase md:normal-case font-medium md:font-light"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
