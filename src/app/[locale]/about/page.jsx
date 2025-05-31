@@ -48,10 +48,7 @@ export default function AboutPage() {
                 alt={data.imgAlt}
                 className="block mx-auto md:w-[65px] md:h-[65px]"
               />
-              <h3
-                className="text-lg md:text-xl mt-6 mb-2 text-[#704B40] font-medium"
-                style={{ fontFamily: 'var(--font-el-messiri)' }}
-              >
+              <h3 className="text-lg md:text-xl mt-6 mb-2 text-[#704B40] font-medium">
                 {data.title}
               </h3>
               <p className="list-description text-lg md:text-xl text-[#422F27]">

@@ -1,11 +1,5 @@
 import './globals.css';
-import {
-  Inter,
-  Bad_Script,
-  Ballet,
-  Great_Vibes,
-  Playfair_Display,
-} from 'next/font/google';
+import { Inter, Great_Vibes, Playfair_Display } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
@@ -18,17 +12,6 @@ const inter = Inter({
   subsets: ['latin', 'cyrillic'],
 });
 
-const bad_script = Bad_Script({
-  variable: '--font-bad-script',
-  subsets: ['latin', 'cyrillic'],
-  weight: '400',
-});
-
-// const el_messiri = El_Messiri({
-//   variable: '--font-el-messiri',
-//   subsets: ['latin', 'cyrillic'],
-// });
-
 const playfair_display = Playfair_Display({
   variable: '--font-playfair-display',
   subsets: ['latin', 'cyrillic'],
@@ -39,11 +22,6 @@ const great_vibes = Great_Vibes({
   variable: '--font-great-vibes',
   subsets: ['latin'],
   weight: '400',
-});
-
-const ballet = Ballet({
-  variable: '--font-ballet',
-  subsets: ['latin'],
 });
 
 export const metadata = {
@@ -60,7 +38,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className="min-h-full">
       <body
-        className={`${inter.variable} ${bad_script.variable}  ${great_vibes.variable} ${playfair_display.variable} ${ballet.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
+        className={`${inter.variable} ${great_vibes.variable} ${playfair_display.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
       >
         <NextIntlClientProvider locale={locale}>
           <Header />
