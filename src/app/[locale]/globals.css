@@ -2,6 +2,7 @@
 
 @theme {
   --breakpoint-3xl: 125rem;
+  --tracking-custom: 0.13em;
 }
 
 @layer utilities {
