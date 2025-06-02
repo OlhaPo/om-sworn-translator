@@ -1,19 +1,11 @@
-'use client';
-
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
 
 import useAboutPageData from '@/app/constants/aboutPageData';
 
 export default function AboutPage() {
   const t = useTranslations('AboutMePage');
   const aboutPageData = useAboutPageData();
-  const [isVisibleCard, setIsVisibleCard] = useState(false);
-
-  useEffect(() => {
-    setIsVisibleCard(true);
-  }, []);
 
   const renderList = (list) => (
     <>
@@ -32,14 +24,12 @@ export default function AboutPage() {
         >
           {t('section-title')}
         </h2>
-        <div className="flex flex-wrap justify-between mb-15 md:mt-0 transition-opacity">
+        <div className="flex flex-wrap justify-between mb-15 md:mt-0">
           {aboutPageData.map((data, index) => (
             <div
-              className={`${
-                isVisibleCard ? 'about-me-card-animate' : 'about-me-card-hidden'
-              } mt-10 md:mt-15 custom-shadow-card rounded-md px-4 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:w-[30%]`}
+              className="about-me-card-animate mt-10 md:mt-15 custom-shadow-card rounded-md px-4 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:w-[30%]"
               key={data.imgUrl}
-              style={{ transitionDelay: `${index * 800}ms` }}
+              style={{ animationDelay: `${index * 400}ms` }}
             >
               <Image
                 src={data.imgUrl}

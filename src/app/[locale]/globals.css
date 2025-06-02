@@ -100,20 +100,23 @@
   }
 
   .legalization h3 {
-    @apply text-xl md:text-2xl mt-6 mb-2 text-[#704B40] font-medium;
-  }
-
-  .about-me-card-hidden {
-    transform: translateX(-100%);
-    opacity: 0;
+    @apply text-xl md:text-2xl mt-6 mb-2 text-[#704B40] font-medium tracking-widest;
   }
 
   .about-me-card-animate {
-    transform: translateX(0);
-    opacity: 1;
-    transition:
-      transform 1.2s ease-out,
-      opacity 1.2s ease-out;
+    opacity: 0;
+    animation: slide-in 1.2s ease-out forwards;
+  }
+
+  @keyframes slide-in {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 

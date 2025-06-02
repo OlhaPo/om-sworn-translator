@@ -24,5 +24,29 @@
     "qualification-descriprion-1": "magister prawa;",
     "qualification-descriprion-2": "licencjonowany tłumacz przysięgły języka ukraińskiego;",
     "qualification-descriprion-3": "certyfikowany specjalista w zakresie legalizacji: \"cudzoziemcy w Polsce\""
+  },
+  "LegalizationPage": {
+    "LegalizationPage": {
+      "page-title": "Legalizacja pobytu w\u00a0Polsce",
+      "paragraph-1": "Legalizacja pobytu cudzoziemców w Rzeczypospolitej Polskiej jest obowiązkowym warunkiem legalnego zamieszkania, studiowania i zatrudnienia.",
+      "paragraph-2": "Oferujemy kompleksowe wsparcie na wszystkich etapach procesu legalizacji pobytu i pracy na terytorium Polski zgodnie z obowiązującymi przepisami prawa imigracyjnego.",
+      "services-types-title": "Rodzaje usług:",
+      "services": {
+        "temporary-residence": "Przygotowanie dokumentów i wsparcie w uzyskaniu zezwoleń na pobyt czasowy na podstawie pracy, nauki, małżeństwa itp.",
+        "permanent-residence": "Przygotowanie dokumentów i wsparcie w uzyskaniu zezwoleń na pobyt stały oraz karty pobytu rezydenta długoterminowego UE.",
+        "support": "Doradztwo i wsparcie przy zmianie pracodawcy lub zmianie podstawy pobytu.",
+        "preparation-complaints": "Przygotowanie skarg i odwołań w przypadku odmowy wydania zezwolenia.",
+        "case-monitoring": "Monitorowanie spraw i wsparcie w Urzędzie Wojewódzkim oraz innych urzędach."
+      },
+      "advantages-title": "Korzyści ze współpracy z nami:",
+      "advantages": {
+        "compliance": "pełna zgodność z procedurami;",
+        "optimization-processing": "optymalizacja czasu rozpatrywania spraw;",
+        "handling-remotely": "Możliwość zdalnej realizacji powierzonych przez Państwa zadań (kontakt i przekazywanie niezbędnych materiałów za pomocą Viber, Gmail, Messenger itp.).;",
+        "accuracy-confidentiality": "dokładność i poufność wszystkich przekazanych informacji."
+      },
+      "paragraph-3": "I wiele innych związanych z pobytem i życiem cudzoziemców w Polsce.",
+      "paragraph-4": "Skontaktuj się z nami dzisiaj po bezpłatną konsultację, a pomożemy Ci zaoszczędzić czas i uniknąć błędów na drodze do legalizacji Twojego pobytu w Polsce."
+    }
   }
 }

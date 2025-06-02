@@ -1,69 +1,35 @@
+import { useTranslations } from 'next-intl';
+
 export default function Legalization() {
+  const t = useTranslations('LegalizationPage');
   return (
     <div className="legalization flex flex-col md:flex-row flex-grow">
       <div className="mx-auto max-w-[1200px] my-15 md:my-20  px-8 md:px-0">
         <h2
-          className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mb-5 md:mb-10 uppercase md:normal-case font-medium md:font-light"
+          className="text-[21px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mb-5 md:mb-10 uppercase md:normal-case font-medium md:font-light"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
-          Легалізація перебування у&nbsp;Польщі
+          {t('page-title')}
         </h2>
-        <p>
-          Легалізація перебування іноземних громадян у Республіці Польща є
-          обов&apos;язковою умовою для законного проживання, навчання та
-          працевлаштування.
-        </p>
-        <p>
-          Пропонуємо{' '}
-          <b>комплексну підтримку на всіх етапах процесу легалізації</b>{' '}
-          перебування і роботи на території Польщі відповідно до чинних норм
-          міграційного законодавства.
-        </p>
-
+        <p>{t('paragraph-1')}</p>
+        <p>{t('paragraph-2')}</p>
+        <h3>{t('services-types-title')}</h3>
         <ul>
-          <h3>Види послуг:</h3>
-          <li>
-            • Підготовка документів та супровід в оформленні дозволів на
-            тимчасове перебування (<b>pobyt czasowy</b>) на підставі роботи,
-            навчання, шлюбу тощо;
-          </li>
-          <li>
-            • Підготовка документів та супровід в оформленні дозволів на
-            постійне перебування та карт довготермінового резидента ЄС (
-            <b>pobyt stały / pobyt rezydenta długoterminowego UE</b>)
-          </li>
-          <li>
-            • Консультаційний супровід при зміні працедавця або змінах підстав
-            перебування
-          </li>
-          <li>
-            • Підготовку скарг та апеляцій у випадку відмови в наданні дозволу;
-          </li>
-          <li>
-            • Моніторинг справ та супровід у Воєводському та інших управліннях
-            (urzędach);
-          </li>
-          <p>
-            Та багато інших пов’язаних із перебуванням і життям іноземців в
-            Польщі.
-          </p>
+          <li>{t('services.temporary-residence')}</li>
+          <li>{t('services.permanent-residence')}</li>
+          <li>{t('services.support')}</li>
+          <li>{t('services.preparation-complaints')}</li>
+          <li>{t('services.case-monitoring')}</li>
         </ul>
+        <p>{t('paragraph-3')}</p>
+        <h3>{t('advantages-title')}</h3>
         <ul>
-          <h3>Переваги від співпраці з нами:</h3>
-          <li>• повна відповідність до процедур;</li>
-          <li>• оптимізація строків розгляду справ;</li>
-          <li>
-            • можливість дистанційної реалізації поставлених Вами завдань
-            (контакт та передача необхідних матеріалів за допомогою Viber,
-            Gmail, Messenger...);
-          </li>
-          <li>• точність та конфіденційність усієї наданої інформації.</li>
+          <li>{t('advantages.compliance')}</li>
+          <li>{t('advantages.optimization-processing')}</li>
+          <li>{t('advantages.handling-remotely')}</li>
+          <li>{t('advantages.accuracy-confidentiality')}</li>
         </ul>
-        <p>
-          Зверніться сьогодні для <b>безкоштовної консультації</b> і ми
-          допоможемо Вам <b>заощадити час, уникнути помилок</b> на шляху до
-          легалізації Вашого перебування у Польщі.
-        </p>
+        <p>{t('paragraph-4')}</p>
       </div>
     </div>
   );
