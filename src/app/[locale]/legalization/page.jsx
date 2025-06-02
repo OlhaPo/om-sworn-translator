@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 
-export default function Legalization() {
+export default function LegalizationPage() {
   const t = useTranslations('LegalizationPage');
   return (
     <div className="legalization flex flex-col md:flex-row flex-grow">
