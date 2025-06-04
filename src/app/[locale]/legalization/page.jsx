@@ -12,16 +12,17 @@ export default function LegalizationPage() {
       <div className="mx-auto md:max-w-[1200px] my-15 md:my-20">
         <div className="md:max-h-[400px]">
           <Image
-            src="/sworn-translator-stamp.jpg"
-            width={1200}
-            height={800}
+            src="/legalization.jpg"
+            width={600}
+            height={400}
             alt="sworn translator stamp"
-            className="md:w-full md:h-[400px] object-cover object-right-bottom md:rounded-xl"
+            className="w-full md:max-h-[400px] object-cover object-center md:rounded-xl"
             priority
           />
         </div>
+
         <h2
-          className="text-[24px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-wide md:tracking-custom my-10 md:my-15 uppercase md:normal-case font-medium md:font-light px-8 md:px-0"
+          className="text-2xl md:text-5xl text-[#704B40] text-center tracking-wide md:tracking-custom my-10 md:my-15 uppercase md:normal-case font-medium md:font-light px-8 md:px-0"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('page-title')}
@@ -37,7 +38,7 @@ export default function LegalizationPage() {
           ))}
         </div>
         <h3
-          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-2xl md:text-3xl py-6 tracking-widest px-8 md:px-0"
+          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-[22px] md:text-3xl py-6 tracking-widest px-8 md:px-0"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('advantages-title')}

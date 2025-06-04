@@ -102,7 +102,9 @@
   }
 
   .legalization p,
-  .legalization li {
+  .translations p,
+  .legalization li,
+  .translations li {
     @apply text-lg md:text-[22px] text-[#2D201A];
   }
 
