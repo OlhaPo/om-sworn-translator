@@ -75,7 +75,7 @@ export default function Header() {
       </div>
 
       <div className="md:hidden flex justify-between items-center py-4 px-8  z-1000">
-        <p className="legal-quote text-[19px] text-[#422F27] custom-shadow-mobile px-3 py-2">
+        <p className="legal-quote text-[19px] text-[#2D201A] custom-shadow-mobile px-3 py-2">
           {t('quote')}
         </p>
         <button onClick={handleMobileMenu} className="hover-state">
