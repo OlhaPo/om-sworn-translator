@@ -11,6 +11,7 @@ export default function MainPage() {
           alt="logo"
           width={120}
           height={120}
+          priority
           className="mx-auto mt-8 md:mt-[-25px] md:w-[195px] md:h-[195px] 3xl:w-[210px] 3xl:h-[210px] md:mb-12 block order-2 md:order-1"
         />
         <h1

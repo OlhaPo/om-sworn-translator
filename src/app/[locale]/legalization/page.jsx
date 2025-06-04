@@ -13,10 +13,11 @@ export default function LegalizationPage() {
         <div className="md:max-h-[400px]">
           <Image
             src="/sworn-translator-stamp.jpg"
-            width={1536}
-            height={1024}
-            alt="test"
+            width={1200}
+            height={800}
+            alt="sworn translator stamp"
             className="md:w-full md:h-[400px] object-cover object-right-bottom md:rounded-xl"
+            priority
           />
         </div>
         <h2
