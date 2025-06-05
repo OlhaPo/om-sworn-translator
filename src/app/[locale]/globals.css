@@ -101,11 +101,15 @@
     background-color: #d7c8b3;
   }
 
-  .legalization p,
-  .translations p,
   .legalization li,
+  .legalization span,
   .translations li {
     @apply text-lg md:text-[22px] text-[#2D201A];
+  }
+
+  .legalization p,
+  .translations p {
+    @apply pt-10 px-8 md:px-0 text-lg md:text-[22px] text-[#2D201A];
   }
 
   .legalization-type-card p {

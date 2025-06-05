@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { GiCheckMark } from 'react-icons/gi';
 
 import useLegalizationPageData from '@/app/hooks/useLegalizationPageData';
+import CallToAction from '@/components/common/ui/CallToAction';
 
 export default function LegalizationPage() {
   const t = useTranslations('LegalizationPage');
@@ -10,16 +11,14 @@ export default function LegalizationPage() {
   return (
     <div className="legalization flex flex-col md:flex-row flex-grow">
       <div className="mx-auto md:max-w-[1200px] my-15 md:my-20">
-        <div className="md:max-h-[400px]">
-          <Image
-            src="/legalization.jpg"
-            width={600}
-            height={400}
-            alt="sworn translator stamp"
-            className="w-full md:max-h-[400px] object-cover object-center md:rounded-xl"
-            priority
-          />
-        </div>
+        <Image
+          src="/legalization.jpg"
+          width={600}
+          height={400}
+          alt="legalization img passport card permission to work"
+          className="mx-auto md:max-h-[400px] object-contain md:custom-shadow"
+          priority
+        />
 
         <h2
           className="text-2xl md:text-5xl text-[#704B40] text-center tracking-wide md:tracking-custom my-10 md:my-15 uppercase md:normal-case font-medium md:font-light px-8 md:px-0"
@@ -27,13 +26,13 @@ export default function LegalizationPage() {
         >
           {t('page-title')}
         </h2>
-        <p className="pb-10 px-8 md:px-0">{t('paragraph-1')}</p>
-        <p className="pb-10 px-8 md:px-0">{t('paragraph-2')}</p>
-        <div className="px-10 md:px-15">
+        <p>{t('paragraph-1')}</p>
+        <p>{t('paragraph-2')}</p>
+        <div className="px-10 md:px-15 mt-10">
           {services.map((service) => (
             <div className="flex mb-8 items-center" key={service.title}>
               <span className="legalization-page-icon">{service.icon}</span>
-              <p className="pl-10">{service.title}</p>
+              <span className="pl-10">{service.title}</span>
             </div>
           ))}
         </div>
@@ -53,7 +52,8 @@ export default function LegalizationPage() {
             </li>
           ))}
         </ul>
-        <p className="pt-10 px-8 md:px-0">{t('paragraph-3')}</p>
+        <p>{t('paragraph-3')}</p>
+        <CallToAction />
       </div>
     </div>
   );
