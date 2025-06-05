@@ -21,7 +21,7 @@ export default function LegalizationPage() {
         />
 
         <h2
-          className="text-2xl md:text-5xl text-[#704B40] text-center tracking-wide md:tracking-custom my-10 md:my-15 uppercase md:normal-case font-medium md:font-light px-8 md:px-0"
+          className="text-2xl md:text-5xl text-[#704B40] text-center tracking-wide md:tracking-custom mt-10 md:mt-15 uppercase md:normal-case font-medium md:font-light px-8 md:px-0"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('page-title')}

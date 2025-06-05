@@ -36,7 +36,7 @@ export default async function RootLayout({ children, params }) {
     notFound();
   }
   return (
-    <html lang={locale} className="min-h-full">
+    <html lang={locale} className="min-h-full scroll-smooth">
       <body
         className={`${inter.variable} ${great_vibes.variable} ${playfair_display.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
       >
