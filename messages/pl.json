@@ -49,5 +49,31 @@
     },
     "paragraph-3": "Skontaktuj się z nami dzisiaj po bezpłatną konsultację, pomożemy Ci zaoszczędzić czas i uniknąć błędów na drodze do legalizacji Twojego pobytu w Polsce.",
     "call-to-action": "Umów się na bezpłatną konsultację"
+  },
+  "TranslationsPage": {
+    "page-title": "Tłumaczenia",
+    "paragraph-1": "W przypadku, gdy potrzebują Państwo wykorzystać dokumenty wydane na Ukrainie w oficjalnych urzędach lub instytucjach na terenie Polski, konieczne jest posiadanie ich oficjalnego tłumaczenia wykonanego przez tłumacza przysięgłego. Zgodnie z ust. 2 art. 8 Ustawy o cudzoziemcach Dokumenty sporządzone w języku obcym, służące za dowód w postępowaniu prowadzonym na podstawie ustawy, składa się wraz z ich tłumaczeniem na język polski, dokonanym przez tłumacza przysięgłego.",
+    "paragraph-2": "Tłumaczenie poświadczone z języka ukraińskiego na język polski (tzw. tłumaczenie przysięgłe) to jest oficjalne tłumaczenie dokumentów, wykonywane przez tłumacza przysięgłego, licencjonowanego przez Ministerstwo Sprawiedliwości Rzeczypospolitej Polskiej i wpisanego na ",
+    "link-to-sworn-traslators-list": "listę tłumaczy przysięgłych",
+    "paragraph-3": "Takie tłumaczenie ma moc prawną i jest uznawane przez polskie instytucje państwowe, sądy, uczelnie oraz inne urzędy państwowe.",
+    "quote": "Profesjonalne tłumaczenie to klucz do bezproblemowej legalizacji Państwa dokumentów w Polsce.",
+    "where-required-title": "Tłumaczenie poświadczone jest wymagane do:",
+    "places": {
+      "government-offices": "złożenia dokumentów w Zakładzie Ubezpieczeń Społecznych (ZUS), Urzędzie Wojewódzkim, Urzędzie Stanu Cywilnego (USC) itp.;",
+      "residence-visa": "uzyskania zezwolenia na pobyt, obywatelstwo, pozwolenia na pracę, wizę;",
+      "education-notary": "podjęcia studiów, zatrudnienia, podczas czynności notarialnych;",
+      "court-police-prosecution": "rozpatrywania spraw sądowych, na policji, w prokuraturze."
+    },
+    "we-offer-title": "Zapraszamy do współpracy i gwarantujemy:",
+    "offers": {
+      "certifiedTranslation": "tłumaczenie poświadczone (z podpisem i pieczęcią) z języka ukraińskiego na polski i z polskiego na ukraiński dokumentów sporządzonych w urzędach stanu cywilnego, szkołach, uczelniach wyższych oraz innych instytucjach, dokumentacji medycznej, pełnomocnictw, oświadczeń, dokumentów firmowych, orzeczeń sądowych i innych dokumentów;",
+      "standardTranslation": "zwykłe tłumaczenie z języka ukraińskiego na polski i z polskiego na ukraiński różnego rodzaju dokumentacji, stron internetowych itp.;",
+      "documentPreparation": "Przygotowanie pełnomocnictw i oświadczeń w języku polskim / ukraińskim / rosyjskim;",
+      "formFillingHelp": "pomoc w wypełnianiu formularzy i wniosków;",
+      "interpretation": "tłumaczenie ustne podczas czynności notarialnych u notariusza; rejestracji aktów stanu cywilnego w odpowiednich urzędach; czynności prawnych w innych instytucjach państwowych, podczas egzaminów organizowanych przez Urząd Dozoru Technicznego (UDT), a także podczas egzaminów na prawo jazdy (WORD);",
+      "deadlineCompliance": "ścisłe dotrzymywanie terminów;",
+      "transparentPricing": "przejrzysty system rozliczeń;",
+      "confidentiality": "zachowanie poufności."
+    }
   }
 }
