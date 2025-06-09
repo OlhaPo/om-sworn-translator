@@ -27,7 +27,11 @@ export default function TranslationsPage() {
         >
           {t('page-title')}
         </h2>
-        <p>{t('paragraph-1')}</p>
+        <p>
+          {t.rich('paragraph-1', {
+            em: (chunks) => <em>{chunks}</em>,
+          })}
+        </p>
         <p>
           {t('paragraph-2')}
           <a
@@ -74,9 +78,7 @@ export default function TranslationsPage() {
             </li>
           ))}
         </ul>
-        <p className="legal-quote quote-translations-page">
-          &quot;{t('quote')}&quot;
-        </p>
+        <p className="quote-translations-page">&quot; {t('quote')} &quot;</p>
         <CallToAction />
       </div>
     </div>

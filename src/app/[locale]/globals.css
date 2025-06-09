@@ -59,6 +59,10 @@
     font-family: var(--font-great-vibes);
   }
 
+  .quote-translations-page {
+    font-family: var(--font-bad-script);
+  }
+
   .legalization-page-icon svg {
     color: #704b40;
     width: 40px;
@@ -97,7 +101,6 @@
   .prices,
   .contacts {
     font-family: var(--font-inter);
-    /* background-color: #e0cdbd; */
     background-color: #d7c8b3;
   }
 
@@ -110,6 +113,10 @@
   .legalization p,
   .translations p {
     @apply pt-10 px-8 md:px-0 text-lg md:text-[22px] text-[#2D201A];
+  }
+
+  .translations p:last-of-type {
+    @apply md:px-0 text-2xl md:text-3xl text-center md:text-left text-[#704B40] text-shadow-sm leading-10;
   }
 
   .translations ul {
@@ -139,10 +146,6 @@
       opacity: 1;
     }
   }
-}
-
-.quote-translations-page {
-  @apply text-3xl text-center md:text-left md:text-[40px] text-[#704B40] text-shadow-sm;
 }
 
 .hover-state {

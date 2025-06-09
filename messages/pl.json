@@ -52,11 +52,11 @@
   },
   "TranslationsPage": {
     "page-title": "Tłumaczenia",
-    "paragraph-1": "W przypadku, gdy potrzebują Państwo wykorzystać dokumenty wydane na Ukrainie w oficjalnych urzędach lub instytucjach na terenie Polski, konieczne jest posiadanie ich oficjalnego tłumaczenia wykonanego przez tłumacza przysięgłego. Zgodnie z ust. 2 art. 8 Ustawy o cudzoziemcach Dokumenty sporządzone w języku obcym, służące za dowód w postępowaniu prowadzonym na podstawie ustawy, składa się wraz z ich tłumaczeniem na język polski, dokonanym przez tłumacza przysięgłego.",
+    "paragraph-1": "W przypadku, gdy potrzebują Państwo wykorzystać dokumenty wydane na Ukrainie w oficjalnych urzędach lub instytucjach na terenie Polski, konieczne jest posiadanie ich oficjalnego tłumaczenia wykonanego przez tłumacza przysięgłego. Zgodnie z ust. 2 art. 8 ustawy o cudzoziemcach: <em>\"Dokumenty sporządzone w języku obcym, służące za dowód w postępowaniu prowadzonym na podstawie ustawy, składa się wraz z ich tłumaczeniem na język polski, dokonanym przez tłumacza przysięgłego.\"</em>",
     "paragraph-2": "Tłumaczenie poświadczone z języka ukraińskiego na język polski (tzw. tłumaczenie przysięgłe) to jest oficjalne tłumaczenie dokumentów, wykonywane przez tłumacza przysięgłego, licencjonowanego przez Ministerstwo Sprawiedliwości Rzeczypospolitej Polskiej i wpisanego na ",
     "link-to-sworn-traslators-list": "listę tłumaczy przysięgłych",
     "paragraph-3": "Takie tłumaczenie ma moc prawną i jest uznawane przez polskie instytucje państwowe, sądy, uczelnie oraz inne urzędy państwowe.",
-    "quote": "Profesjonalne tłumaczenie to klucz do bezproblemowej legalizacji Państwa dokumentów w Polsce.",
+    "quote": "Profesjonalne tłumaczenie to klucz do\u00a0bezproblemowej legalizacji Państwa\u00a0dokumentów w Polsce.",
     "where-required-title": "Tłumaczenie poświadczone jest wymagane do:",
     "places": {
       "government-offices": "złożenia dokumentów w Zakładzie Ubezpieczeń Społecznych (ZUS), Urzędzie Wojewódzkim, Urzędzie Stanu Cywilnego (USC) itp.;",

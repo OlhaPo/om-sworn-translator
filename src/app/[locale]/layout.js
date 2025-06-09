@@ -1,5 +1,10 @@
 import './globals.css';
-import { Inter, Great_Vibes, Playfair_Display } from 'next/font/google';
+import {
+  Inter,
+  Great_Vibes,
+  Playfair_Display,
+  Bad_Script,
+} from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
@@ -10,6 +15,11 @@ import { routing } from '@/i18n/routing';
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin', 'cyrillic'],
+});
+const bad_script = Bad_Script({
+  variable: '--font-bad-script',
+  subsets: ['latin', 'cyrillic'],
+  weight: '400',
 });
 
 const playfair_display = Playfair_Display({
@@ -38,7 +48,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale} className="min-h-full scroll-smooth">
       <body
-        className={`${inter.variable} ${great_vibes.variable} ${playfair_display.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
+        className={`${inter.variable} ${great_vibes.variable} ${playfair_display.variable} ${bad_script.variable} antialiased bg-custom-gradient min-h-screen flex flex-col flex-nowrap justify-between`}
       >
         <NextIntlClientProvider locale={locale}>
           <Header />
