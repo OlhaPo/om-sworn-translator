@@ -151,3 +151,7 @@
 .hover-state {
   @apply hover:cursor-pointer hover:text-[#422F27] active:text-[#422F27] transition duration-300;
 }
+
+.social-contacts svg {
+  @apply w-7 h-7 md:w-8 md:h-8;
+}

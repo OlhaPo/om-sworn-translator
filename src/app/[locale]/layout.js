@@ -8,8 +8,9 @@ import {
 import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
-import Footer from '@/components/common/Footer';
+// import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
+import ConditionalFooter from '@/components/ConditionalFooter';
 import { routing } from '@/i18n/routing';
 
 const inter = Inter({
@@ -53,7 +54,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider locale={locale}>
           <Header />
           {children}
-          <Footer />
+          <ConditionalFooter />
         </NextIntlClientProvider>
       </body>
     </html>

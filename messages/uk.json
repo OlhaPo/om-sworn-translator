@@ -74,5 +74,8 @@
       "transparentPricing": "прозору систему розрахунку;",
       "confidentiality": "дотримання конфіденційності."
     }
+  },
+  "ContactPage": {
+    "page-title": "Контакти"
   }
 }

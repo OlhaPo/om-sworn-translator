@@ -75,5 +75,8 @@
       "transparentPricing": "przejrzysty system rozliczeń;",
       "confidentiality": "zachowanie poufności."
     }
+  },
+  "ContactPage": {
+    "page-title": "Kontakt"
   }
 }
