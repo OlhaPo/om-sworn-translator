@@ -6,6 +6,7 @@ import {
   EMAIL,
   ADDRESS_STREET,
   ADDRESS_POSTAL_CODE,
+  GOOGLE_MAP_LOCATION,
 } from '@/app/constants/contacts';
 
 const useContactInfo = () => {
@@ -13,6 +14,7 @@ const useContactInfo = () => {
     {
       label: <GrMap size={25} />,
       title: `${ADDRESS_STREET}${ADDRESS_POSTAL_CODE}`,
+      href: GOOGLE_MAP_LOCATION,
     },
     {
       label: <MdOutlinePhone size={25} />,

@@ -2,7 +2,7 @@ import useContactInfo from './hooks/useContactInfo';
 import useSocialLinks from '../Header/hooks/useSocialLinks';
 
 export default function Footer() {
-  const socialLinks = useSocialLinks();
+  const { socialLinksFooter } = useSocialLinks();
   const contactInfo = useContactInfo();
 
   return (
@@ -10,17 +10,14 @@ export default function Footer() {
       <div className="2xl:text-xl max-w-[1200px] 2xl:max-w-[1400px] mx-auto flex justify-between">
         <ul className="flex justify-center gap-10">
           {contactInfo.map((value) => (
-            <li
-              key={value.title}
-              className="hover-state flex gap-2 items-center"
-            >
+            <li key={value.title} className="flex gap-2 items-center">
               {value.label}
               {value.title}
             </li>
           ))}
         </ul>
         <ul className="flex justify-center gap-8">
-          {socialLinks.map((socialLink) => (
+          {socialLinksFooter.map((socialLink) => (
             <li
               key={socialLink.href}
               className="hover-state flex gap-2 items-center"

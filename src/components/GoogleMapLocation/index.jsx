@@ -1,8 +1,10 @@
+import { GOOGLE_MAP_LOCATION } from '@/app/constants/contacts';
+
 export default function GoogleMapLocation() {
   return (
     <div className="mb-15 md:mb-0 pt-5 md:pt-0 cursor-pointer w-full max-w-full md:max-w-[650px] flex-shrink-0">
       <a
-        href="https://maps.app.goo.gl/j3QEtuQtQR1QazV3A"
+        href={GOOGLE_MAP_LOCATION}
         target="_blank"
         rel="noopener noreferrer"
         className="block w-full"

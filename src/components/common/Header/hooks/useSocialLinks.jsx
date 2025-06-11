@@ -7,7 +7,7 @@ import {
 } from '@/app/constants/contacts';
 
 const useSocialLinks = () => {
-  const socialLinks = [
+  const socialLinksFooter = [
     { label: <FaFacebook size={25} />, href: FACEBOOK_LINK },
     {
       label: <FaInstagram size={25} />,
@@ -15,7 +15,17 @@ const useSocialLinks = () => {
     },
     { label: <FaViber size={25} />, href: VIBER_LINK },
   ];
-  return socialLinks;
+
+  const socialSvgContacts = [
+    { label: '/viber.svg', href: VIBER_LINK },
+    {
+      label: '/instagram.svg',
+      href: INSTAGRAM_LINK,
+    },
+    { label: '/facebook.svg', href: FACEBOOK_LINK },
+  ];
+
+  return { socialLinksFooter, socialSvgContacts };
 };
 
 export default useSocialLinks;

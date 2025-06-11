@@ -14,7 +14,7 @@ import useSocialLinks from './hooks/useSocialLinks';
 
 export default function Header() {
   const links = useNavLinks();
-  const socialLinks = useSocialLinks();
+  const { socialLinksFooter } = useSocialLinks();
   const t = useTranslations('HomePage');
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -102,7 +102,7 @@ export default function Header() {
           </ul>
           <LanguageSwitcher />
           <ul className="flex gap-5 mt-12">
-            {socialLinks.map((socialLink) => (
+            {socialLinksFooter.map((socialLink) => (
               <li key={socialLink.href} className="hover-state">
                 <a
                   href={socialLink.href}

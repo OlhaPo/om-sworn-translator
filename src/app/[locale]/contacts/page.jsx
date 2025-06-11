@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import {
@@ -10,7 +11,7 @@ import useSocialLinks from '@/components/common/Header/hooks/useSocialLinks';
 import GoogleMapLocation from '@/components/GoogleMapLocation';
 
 export default function Contacts() {
-  const socialLinks = useSocialLinks();
+  const { socialSvgContacts } = useSocialLinks();
   const t = useTranslations('ContactPage');
 
   return (
@@ -27,11 +28,17 @@ export default function Contacts() {
             <li className="pb-8">
               {ADDRESS_STREET} <br /> {ADDRESS_POSTAL_CODE}
             </li>
-            <li className="pb-8">{PHONE_NUMBER}</li>
-            <li>{EMAIL}</li>
+            <li className="pb-8">
+              <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            </li>
+            <li>
+              <a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
+                {EMAIL}
+              </a>
+            </li>
           </ul>
           <ul className="mt-10 md:mt-15 flex gap-8 text-[#704B40] social-contacts flex-wrap">
-            {socialLinks.map((socialLink) => (
+            {socialSvgContacts.map((socialLink) => (
               <li
                 key={socialLink.href}
                 className="hover-state flex gap-2 items-center"
@@ -41,7 +48,13 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {socialLink.label}
+                  <Image
+                    src={socialLink.label}
+                    width={28}
+                    height={28}
+                    alt="social svg"
+                    className="md:w-8 md:h-8"
+                  />
                 </a>
               </li>
             ))}
