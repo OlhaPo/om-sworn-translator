@@ -2,7 +2,7 @@
 
 import { useLocale } from 'next-intl';
 
-import { usePathname, useRouter } from '@/i18n/navigation'; // Імпортуємо з вашого файлу navigation.js
+import { usePathname, useRouter } from '@/i18n/navigation';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl">
+    <ul className="flex text-lg 2xl:text-xl 3xl:text-2xl">
       <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('uk')}

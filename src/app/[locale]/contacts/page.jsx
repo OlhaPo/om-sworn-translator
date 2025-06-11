@@ -35,7 +35,7 @@ export default function Contacts() {
               <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
           </ul>
-          <ul className="mt-10 md:mt-15 flex gap-8 text-[#704B40] social-contacts flex-wrap">
+          <ul className="mt-10 md:mt-15 flex gap-8">
             {socialSvgContacts.map((socialLink) => (
               <li
                 key={socialLink.href}

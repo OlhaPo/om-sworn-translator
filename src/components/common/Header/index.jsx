@@ -14,7 +14,7 @@ import useSocialLinks from './hooks/useSocialLinks';
 
 export default function Header() {
   const links = useNavLinks();
-  const { socialLinksFooter } = useSocialLinks();
+  const { socialSvgContacts } = useSocialLinks();
   const t = useTranslations('HomePage');
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -79,7 +79,7 @@ export default function Header() {
           {t('quote')}
         </p>
         <button onClick={handleMobileMenu} className="hover-state">
-          <IoMenu size={27} />
+          <IoMenu size={30} />
         </button>
       </div>
 
@@ -94,22 +94,31 @@ export default function Header() {
               className="ml-[-12px]"
             />
             <button onClick={handleMobileMenu} className="mt-[9px] hover-state">
-              <IoCloseOutline size={27} />
+              <IoCloseOutline size={30} />
             </button>
           </div>
-          <ul className="mobile-nav-menu flex flex-col text-lg gap-3 my-8">
+          <ul className="mobile-nav-menu flex flex-col text-xl gap-5 my-12">
             {links.map((link) => renderMobileNavItem(link))}
           </ul>
           <LanguageSwitcher />
-          <ul className="flex gap-5 mt-12">
-            {socialLinksFooter.map((socialLink) => (
-              <li key={socialLink.href} className="hover-state">
+          <ul className="flex gap-5 mt-15">
+            {socialSvgContacts.map((socialLink) => (
+              <li
+                key={socialLink.href}
+                className="hover-state flex gap-2 items-center"
+              >
                 <a
                   href={socialLink.href}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {socialLink.label}
+                  <Image
+                    src={socialLink.label}
+                    width={28}
+                    height={28}
+                    alt="social svg"
+                    className="md:w-8 md:h-8"
+                  />
                 </a>
               </li>
             ))}
