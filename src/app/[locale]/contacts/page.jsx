@@ -32,9 +32,7 @@ export default function Contacts() {
               <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
             </li>
             <li>
-              <a href={`mailto:${EMAIL}`} target="_blank" rel="noreferrer">
-                {EMAIL}
-              </a>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
           </ul>
           <ul className="mt-10 md:mt-15 flex gap-8 text-[#704B40] social-contacts flex-wrap">
