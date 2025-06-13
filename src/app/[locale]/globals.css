@@ -136,6 +136,10 @@
     animation: slide-in 1.2s ease-out forwards;
   }
 
+  .prices p {
+    @apply text-lg md:text-[22px] text-[#2D201A];
+  }
+
   @keyframes slide-in {
     0% {
       opacity: 0;

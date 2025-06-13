@@ -10,7 +10,7 @@
       "services": "Usługi",
       "translations": "Tłumaczenia",
       "legalization": "Legalizacja",
-      "prices": "Cennik",
+      "pricing-principles": "Zasady obliczania",
       "contacts": "Kontakt"
     }
   },
@@ -74,6 +74,18 @@
       "deadlineCompliance": "ścisłe dotrzymywanie terminów;",
       "transparentPricing": "przejrzysty system rozliczeń;",
       "confidentiality": "zachowanie poufności."
+    }
+  },
+  "PricingPrinciples": {
+    "page-title": "Zasady obliczania",
+    "paragraph-final": "Ostateczny koszt tłumaczeń oraz usług legalizacji jest ustalany indywidualnie, w zależności od stopnia trudności i pilności zlecenia. Zapraszamy do kontaktu!",
+    "principles": {
+      "principle-1": "Strona obliczeniowa tłumaczenia uwierzytelnionego (powszechnie mówiono tłumaczenia przysięgłego), to 1125 znaków ze spacjami.",
+      "principle-2": "Strona obliczeniowa tłumaczenia zwykłego (nie uwierzytelnionego) to 1800 znaków ze spacjami.",
+      "principle-3": "Przy obliczaniu wynagrodzenia za stronę uważa się 25 wierszy, a za wiersz — 45 znaków.",
+      "principle-4": "Za znak uważa się wszystkie widoczne znaki drukarskie, w szczególności litery, znaki przestankowe, cyfry, znaki przeniesienia oraz uzasadnione budową zdania przerwy między nimi.",
+      "principle-5": "Stronę rozpoczętą liczy się za całą.",
+      "principle-6": "W razie tłumaczenia sporządzonego w innym układzie maszynopisu lub wydruku komputerowego niż 25 wierszy po 45 znaków na stronę, za stronę tłumaczenia przyjmuje się 1125 znaków."
     }
   },
   "ContactPage": {

@@ -14,7 +14,7 @@ const useNavLinks = () => {
         { label: t('legalization'), href: '/legalization' },
       ],
     },
-    { label: t('prices'), href: '/prices' },
+    { label: t('pricing-principles'), href: '/pricing-principles' },
     { label: t('contacts'), href: '/contacts' },
   ];
   return navLinks;
