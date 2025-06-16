@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+import useSocialLinks from '@/components/common/Header/hooks/useSocialLinks';
+import GoogleMapLocation from '@/components/GoogleMapLocation';
 import {
   ADDRESS_POSTAL_CODE,
   ADDRESS_STREET,
   EMAIL,
   PHONE_NUMBER,
-} from '@/app/constants/contacts';
-import useSocialLinks from '@/components/common/Header/hooks/useSocialLinks';
-import GoogleMapLocation from '@/components/GoogleMapLocation';
+} from '@/constants/contacts';
 
-export default function Contacts() {
+export default function ContactsPage() {
   const { socialSvgContacts } = useSocialLinks();
   const t = useTranslations('ContactPage');
 

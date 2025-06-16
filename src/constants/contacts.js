@@ -1,5 +1,6 @@
 export const FACEBOOK_LINK = 'https://www.facebook.com/share/1CJZQuekqu/';
-export const INSTAGRAM_LINK = 'https://www.instagram.com/';
+export const INSTAGRAM_LINK =
+  'https://www.instagram.com/olena.marchenko.tlumacz';
 export const VIBER_LINK = 'viber://chat?number=%2B48514249213';
 export const PHONE_NUMBER = '+48514249213';
 export const EMAIL = 'tlumaczmarchenko@gmail.com';

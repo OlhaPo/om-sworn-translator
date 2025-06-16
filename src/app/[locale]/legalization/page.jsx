@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { GiCheckMark } from 'react-icons/gi';
 
-import useLegalizationPageData from '@/app/hooks/useLegalizationPageData';
 import CallToAction from '@/components/common/ui/CallToAction';
+import useLegalizationPageData from '@/hooks/useLegalizationPageData';
 
 export default function LegalizationPage() {
   const t = useTranslations('LegalizationPage');

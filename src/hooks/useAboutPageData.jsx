@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 const useAboutPageData = () => {
   const t = useTranslations('AboutMePage');
-  const aboutPagaData = [
+  const aboutPageData = [
     {
       imgUrl: '/experience.svg',
       imgAlt: 'icon experience and effectiveness',
@@ -30,7 +30,7 @@ const useAboutPageData = () => {
       ],
     },
   ];
-  return aboutPagaData;
+  return aboutPageData;
 };
 
 export default useAboutPageData;

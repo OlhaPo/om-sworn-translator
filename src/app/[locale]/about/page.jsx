@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import useAboutPageData from '@/app/constants/aboutPageData';
+import useAboutPageData from '@/hooks/useAboutPageData';
 
-export default function AboutPage() {
+export default function AboutMePage() {
   const t = useTranslations('AboutMePage');
   const aboutPageData = useAboutPageData();
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
           className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mt-15 md:mt-0 md:mb-5 uppercase md:normal-case font-medium md:font-light"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
-          {t('section-title')}
+          {t('page-title')}
         </h2>
         <div className="flex flex-wrap justify-between mb-15 md:mt-0">
           {aboutPageData.map((data, index) => (

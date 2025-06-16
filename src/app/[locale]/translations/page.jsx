@@ -3,8 +3,8 @@ import { useTranslations } from 'next-intl';
 import { BsArrowRight } from 'react-icons/bs';
 import { GiCheckMark } from 'react-icons/gi';
 
-import useTranslationsPageData from '@/app/hooks/useTranslationsPageData';
 import CallToAction from '@/components/common/ui/CallToAction';
+import useTranslationsPageData from '@/hooks/useTranslationsPageData';
 
 export default function TranslationsPage() {
   const t = useTranslations('TranslationsPage');

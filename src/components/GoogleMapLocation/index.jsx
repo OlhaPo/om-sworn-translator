@@ -1,4 +1,4 @@
-import { GOOGLE_MAP_LOCATION } from '@/app/constants/contacts';
+import { GOOGLE_MAP_LOCATION } from '@/constants/contacts';
 
 export default function GoogleMapLocation() {
   return (

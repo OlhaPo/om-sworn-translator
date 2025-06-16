@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import usePricingPrinciplesData from '@/app/hooks/usePricingPrinciplesData';
+import usePricingPrinciplesData from '@/hooks/usePricingPrinciplesData';
 
 export default function PricingPrinciplesPage() {
   const t = useTranslations('PricingPrinciples');
@@ -17,7 +17,7 @@ export default function PricingPrinciplesPage() {
         </h2>
         {principles.map((principle) => (
           <div className="flex items-start mb-6 md:mb-4" key={principle.title}>
-            <span className="w-3 h-3 md:w-4 bg-[#704B40] md:h-4 transform rotate-45 flex-shrink-0"></span>
+            <span className="w-3 h-3 bg-[#704B40] transform rotate-45 flex-shrink-0"></span>
             <p className="-mt-2 ml-4">{principle.title}</p>
           </div>
         ))}

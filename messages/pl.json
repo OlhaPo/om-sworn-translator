@@ -10,12 +10,12 @@
       "services": "Usługi",
       "translations": "Tłumaczenia",
       "legalization": "Legalizacja",
-      "pricing-principles": "Zasady obliczania",
+      "pricing-principles": "Obliczenia",
       "contacts": "Kontakt"
     }
   },
   "AboutMePage": {
-    "section-title": "Trzy powody współpracować ze\u00a0mną",
+    "page-title": "Trzy powody współpracować z\u00a0nami",
     "experience-title": "Duże doświadczenie i skuteczność",
     "experience-descriprion": "Ponad 10 lat doświadczenia i skuteczna realizacja zadań (ponad 93% wszystkich zleceń).",
     "task-execution-title": "Szybkość realizacji zadań",
@@ -23,7 +23,7 @@
     "qualification-title": "Kwalifikacje",
     "qualification-descriprion-1": "magister prawa;",
     "qualification-descriprion-2": "licencjonowany tłumacz przysięgły języka ukraińskiego;",
-    "qualification-descriprion-3": "certyfikowany specjalista w zakresie legalizacji: \"cudzoziemcy w Polsce\""
+    "qualification-descriprion-3": "certyfikowany specjalista w zakresie legalizacji: \"cudzoziemcy w Polsce\"."
   },
 
   "LegalizationPage": {
@@ -47,8 +47,8 @@
       "handling-remotely": "możliwość zdalnej realizacji powierzonych zadań (Viber, Gmail, Messenger...).",
       "accuracy-confidentiality": "dokładność i poufność wszystkich przekazanych informacji;"
     },
-    "paragraph-3": "Skontaktuj się z nami dzisiaj po bezpłatną konsultację, pomożemy Ci zaoszczędzić czas i uniknąć błędów na drodze do legalizacji Twojego pobytu w Polsce.",
-    "call-to-action": "Umów się na bezpłatną konsultację"
+    "paragraph-3": "Zapraszamy Państwa do kontaktu już dziś po bezpłatną konsultację – pomożemy Państwu zaoszczędzić czas i uniknąć błędów na drodze do legalizacji pobytu w Polsce.",
+    "call-to-action": "Zapisy na bezpłatną konsultację"
   },
   "TranslationsPage": {
     "page-title": "Tłumaczenia",
@@ -68,7 +68,7 @@
     "offers": {
       "certifiedTranslation": "tłumaczenie poświadczone (z podpisem i pieczęcią) z języka ukraińskiego na polski i z polskiego na ukraiński dokumentów sporządzonych w urzędach stanu cywilnego, szkołach, uczelniach wyższych oraz innych instytucjach, dokumentacji medycznej, pełnomocnictw, oświadczeń, dokumentów firmowych, orzeczeń sądowych i innych dokumentów;",
       "standardTranslation": "zwykłe tłumaczenie z języka ukraińskiego na polski i z polskiego na ukraiński różnego rodzaju dokumentacji, stron internetowych itp.;",
-      "documentPreparation": "Przygotowanie pełnomocnictw i oświadczeń w języku polskim / ukraińskim / rosyjskim;",
+      "documentPreparation": "przygotowanie pełnomocnictw i oświadczeń w języku polskim / ukraińskim / rosyjskim;",
       "formFillingHelp": "pomoc w wypełnianiu formularzy i wniosków;",
       "interpretation": "tłumaczenie ustne podczas czynności notarialnych u notariusza; rejestracji aktów stanu cywilnego w odpowiednich urzędach; czynności prawnych w innych instytucjach państwowych, podczas egzaminów organizowanych przez Urząd Dozoru Technicznego (UDT), a także podczas egzaminów na prawo jazdy (WORD);",
       "deadlineCompliance": "ścisłe dotrzymywanie terminów;",
@@ -77,7 +77,7 @@
     }
   },
   "PricingPrinciples": {
-    "page-title": "Zasady obliczania",
+    "page-title": "Obliczenia",
     "paragraph-final": "Ostateczny koszt tłumaczeń oraz usług legalizacji jest ustalany indywidualnie, w zależności od stopnia trudności i pilności zlecenia. Zapraszamy do kontaktu!",
     "principles": {
       "principle-1": "Strona obliczeniowa tłumaczenia uwierzytelnionego (powszechnie mówiono tłumaczenia przysięgłego), to 1125 znaków ze spacjami.",

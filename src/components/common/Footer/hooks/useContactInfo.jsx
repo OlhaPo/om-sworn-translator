@@ -7,7 +7,7 @@ import {
   ADDRESS_STREET,
   ADDRESS_POSTAL_CODE,
   GOOGLE_MAP_LOCATION,
-} from '@/app/constants/contacts';
+} from '@/constants/contacts';
 
 const useContactInfo = () => {
   const contactInfo = [
