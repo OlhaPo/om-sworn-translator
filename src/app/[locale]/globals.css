@@ -99,7 +99,8 @@
   .translations,
   .legalization,
   .prices,
-  .contacts {
+  .contacts,
+  .notfound {
     font-family: var(--font-inter);
     background-color: #d7c8b3;
   }

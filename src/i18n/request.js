@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/named
 import { hasLocale } from 'next-intl';
 import { getRequestConfig } from 'next-intl/server';
 

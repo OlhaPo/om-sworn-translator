@@ -32,7 +32,7 @@ export default function ContactsPage() {
               <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
             </li>
             <li>
-              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+              <a href="mailto:tlumaczmarchenko@gmail.com">{EMAIL}</a>
             </li>
           </ul>
           <ul className="mt-10 md:mt-15 flex gap-5 md:gap-8">

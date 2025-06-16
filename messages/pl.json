@@ -90,5 +90,10 @@
   },
   "ContactPage": {
     "page-title": "Kontakt"
+  },
+  "NotFoundPage": {
+    "page-title": "Nie znaleziono strony",
+    "description": "Proszę sprawdzić poprawność wpisanego adresu lub wrócić do\u00a0strony głównej.",
+    "button": "Strona główna"
   }
 }
