@@ -7,6 +7,7 @@ import { IoCloseOutline, IoMenu } from 'react-icons/io5';
 
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 import NavDropdown from '@/components/NavDropdown';
+import { usePathname } from '@/i18n/navigation';
 import { Link } from '@/i18n/navigation';
 
 import useNavLinks from './hooks/useNavLinks';
@@ -14,6 +15,7 @@ import useSocialLinks from './hooks/useSocialLinks';
 
 export default function Header() {
   const links = useNavLinks();
+  const pathname = usePathname();
   const { socialSvgContacts } = useSocialLinks();
   const t = useTranslations('HomePage');
 
@@ -38,7 +40,7 @@ export default function Header() {
           <Link
             href={link.href}
             onClick={handleMobileMenu}
-            className="block hover-state"
+            className={`hover-state ${pathname === link.href ? 'text-[#2D201A]' : ''}`}
           >
             {link.label}
           </Link>
@@ -65,7 +67,10 @@ export default function Header() {
               </li>
             ) : (
               <li key={link.href}>
-                <Link href={link.href} className="hover-state">
+                <Link
+                  href={link.href}
+                  className={`hover-state ${pathname === link.href ? 'text-[#2D201A]' : ''}`}
+                >
                   {link.label}
                 </Link>
               </li>

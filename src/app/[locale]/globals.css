@@ -154,5 +154,5 @@
 }
 
 .hover-state {
-  @apply hover:cursor-pointer hover:text-[#422F27] active:text-[#422F27] transition duration-300;
+  @apply hover:cursor-pointer hover:text-[#725346] active:text-[#725346] transition duration-300 hover:underline;
 }
