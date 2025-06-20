@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 
 @theme {
+  --breakpoint-xxs: 20rem; /* 320px */
+  --breakpoint-xs: 23.9375rem; /* 383px */
+  --breakpoint-ms: 33.75rem; /* 540px */
   --breakpoint-3xl: 125rem;
   --tracking-custom: 0.13em;
 }
@@ -63,12 +66,6 @@
     font-family: var(--font-bad-script);
   }
 
-  .legalization-page-icon svg {
-    color: #704b40;
-    width: 40px;
-    height: 40px;
-  }
-
   ul.mobile-nav-menu li li {
     padding-left: 8px;
     padding-top: 4px;
@@ -108,24 +105,24 @@
   .legalization li,
   .legalization span,
   .translations li {
-    @apply text-lg md:text-[22px] text-[#2D201A];
+    @apply text-base xs:text-lg md:text-[22px] text-[#2D201A];
   }
 
   .legalization p,
   .translations p {
-    @apply pt-10 px-8 md:px-0 text-lg md:text-[22px] text-[#2D201A];
+    @apply pt-5 xs:pt-10 px-5 xs:px-8 ms:px-10 xl:px-0 text-base xs:text-lg md:text-[22px] text-[#2D201A];
   }
 
   .translations p:last-of-type {
-    @apply md:px-0 text-2xl md:text-3xl text-center md:text-left text-[#704B40] text-shadow-sm leading-10;
+    @apply md:px-0 text-xl xs:text-2xl md:text-3xl text-center md:text-left text-[#704B40] text-shadow-sm leading-10;
   }
 
   .translations ul {
-    @apply px-8 md:px-0 text-lg md:text-[22px] text-[#2D201A];
+    @apply px-8 md:px-0 text-base xs:text-lg md:text-[22px] text-[#2D201A];
   }
 
   .legalization-type-card p {
-    @apply text-lg md:text-xl;
+    @apply text-base xs:text-lg md:text-xl;
   }
 
   .legalization li:last-child {
@@ -138,7 +135,7 @@
   }
 
   .prices p {
-    @apply text-lg md:text-[22px] text-[#2D201A];
+    @apply text-base xs:text-lg md:text-[22px] text-[#2D201A];
   }
 
   @keyframes slide-in {
@@ -154,5 +151,17 @@
 }
 
 .hover-state {
-  @apply hover:cursor-pointer hover:text-[#725346] active:text-[#725346] transition duration-300 hover:underline;
+  @apply hover:cursor-pointer hover:text-[#725346] active:text-[#725346] transition duration-300;
+}
+
+nav .icon svg {
+  @apply xs:w-[30px] xs:h-[30px];
+}
+
+.prices img {
+  @apply xs:w-[70px] xs:h-[70px];
+}
+
+.legalization-page-icon svg {
+  @apply text-[#704b40] w-8 h-8 xs:w-10 xs:h-10;
 }

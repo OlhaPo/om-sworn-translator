@@ -8,7 +8,7 @@ export default function PricingPrinciplesPage() {
   const principles = usePricingPrinciplesData();
   return (
     <div className="prices flex flex-col md:flex-row flex-grow">
-      <div className="mx-auto max-w-[1200px] px-8 md:px-0 mb-20 md:mb-0">
+      <div className="mx-auto max-w-[1200px] px-5 xs:px-8 ms:px-10 mb-20 md:mb-0">
         <h2
           className="text-[28px] md:text-5xl text-[#2D201A]  text-center tracking-widest md:tracking-custom mt-15 mb-10 md:mt-20  md:mb-15 uppercase md:normal-case font-medium md:font-light"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
@@ -17,19 +17,19 @@ export default function PricingPrinciplesPage() {
         </h2>
         {principles.map((principle) => (
           <div className="flex items-start mb-6 md:mb-4" key={principle.title}>
-            <span className="w-3 h-3 bg-[#704B40] transform rotate-45 flex-shrink-0"></span>
+            <span className="w-2 h-2 xs:w-3 xs:h-3 bg-[#704B40] transform rotate-45 flex-shrink-0"></span>
             <p className="-mt-2 ml-4">{principle.title}</p>
           </div>
         ))}
         <p>{t('paragraph-final')}</p>
         <div className="relative">
-          <div className="border-[#615c5a] border mt-10 md:mt-20 w-[75%] md:w-[90%]"></div>{' '}
+          <div className="border-[#615c5a] border mt-10 md:mt-20 w-[80%] xs:w-[75%] md:w-[90%]"></div>{' '}
           <Image
             src="/calculator.svg"
-            width={70}
-            height={70}
-            alt=""
-            className="absolute -top-8 right-0"
+            width={50}
+            height={50}
+            alt="icon calculator"
+            className="absolute -top-6 xs:-top-8 right-0 icon"
           />
         </div>
       </div>

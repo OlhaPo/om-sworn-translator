@@ -7,7 +7,7 @@ export default function Footer() {
 
   return (
     <footer className="2xl:w-full py-4 hidden xl:block custom-shadow bg-[#A98573] text-white">
-      <div className="2xl:text-xl max-w-[1200px] 2xl:max-w-[1400px] mx-auto flex justify-between">
+      <div className="2xl:text-xl 2xl:max-w-[1400px] mx-auto flex justify-between">
         <ul className="flex justify-center gap-10">
           {contactInfo.map((value) => (
             <li key={value.title} className="flex gap-2 items-center">

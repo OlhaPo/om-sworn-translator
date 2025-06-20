@@ -47,7 +47,7 @@ export default function TranslationsPage() {
 
         <p className="mb-10">{t('paragraph-3')}</p>
         <h3
-          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-[22px] md:text-3xl pb-6 tracking-widest px-8 md:px-0"
+          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-3xl pb-6 tracking-widest px-8 md:px-0"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('where-required-title')}
@@ -56,14 +56,14 @@ export default function TranslationsPage() {
           {places.map((place) => (
             <li className="flex mb-3" key={place.title}>
               <span className="pr-4">
-                <BsArrowRight size={28} color="#704B40" />
+                <BsArrowRight className="w-[20px] h-[20px] xs:w-[28px] xs:h-[28px] text-[#704B40]" />
               </span>
               {place.title}
             </li>
           ))}
         </ul>
         <h3
-          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-[22px] md:text-3xl py-6 tracking-widest px-8 md:px-0"
+          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-3xl py-6 tracking-widest px-8 md:px-0"
           style={{ fontFamily: 'var(--font-playfair-display)' }}
         >
           {t('we-offer-title')}
@@ -72,7 +72,7 @@ export default function TranslationsPage() {
           {offers.map((offer) => (
             <li className="flex mb-3" key={offer.title}>
               <span className="pr-4">
-                <GiCheckMark size={22} color="#704B40" />
+                <GiCheckMark className="w-[18px] h-[18px] xs:w-[22px] xs:h-[22px] text-[#704B40]" />
               </span>
               {offer.title}
             </li>

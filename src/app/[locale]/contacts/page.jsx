@@ -16,7 +16,7 @@ export default function ContactsPage() {
 
   return (
     <div className="contacts flex flex-grow text-lg md:text-2xl items-center overflow-x-hidden">
-      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-15 w-full px-8 md:px-0">
+      <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row gap-8 md:gap-15 w-full px-5 xs:px-8 ms:px-10">
         <div className="md:pr-40">
           <h2
             className="text-3xl md:text-5xl text-[#704B40] text-left tracking-widest md:tracking-custom mt-15 mb-10 md:mt-0 md:mb-15 uppercase md:normal-case font-medium md:font-light"

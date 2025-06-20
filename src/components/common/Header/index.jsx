@@ -40,7 +40,7 @@ export default function Header() {
           <Link
             href={link.href}
             onClick={handleMobileMenu}
-            className={`hover-state ${pathname === link.href ? 'text-[#2D201A]' : ''}`}
+            className={`hover-state ${pathname === link.href ? 'text-[#f0ebe8] font-semibold' : ''}`}
           >
             {link.label}
           </Link>
@@ -57,9 +57,9 @@ export default function Header() {
 
   return (
     <nav className="custom-shadow bg-[#A98573] text-white">
-      <div className="w-full hidden items-center md:flex md:justify-between py-6 3xl:py-8 mx-auto max-w-[1200px] 2xl:max-w-[1400px]">
+      <div className="w-full hidden items-center lg:flex lg:justify-between md:px-10 2xl:px-0 py-6 3xl:py-8 mx-auto 2xl:max-w-[1400px]">
         <LanguageSwitcher />
-        <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-20 2xl:gap-22 uppercase">
+        <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-8 2xl:gap-22 uppercase">
           {links.map((link, i) =>
             link.isDropdownMenu ? (
               <li key={i}>
@@ -69,7 +69,7 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`hover-state ${pathname === link.href ? 'text-[#2D201A]' : ''}`}
+                  className={`hover-state ${pathname === link.href ? 'text-[#f0ebe8] font-semibold' : ''}`}
                 >
                   {link.label}
                 </Link>
@@ -79,17 +79,17 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className="md:hidden flex justify-between items-center py-4 px-8  z-1000">
-        <p className="legal-quote text-[19px] text-[#2D201A] custom-shadow-mobile px-3 py-2">
+      <div className="lg:hidden flex justify-between items-center py-4 px-5 xs:px-8 ms:px-10 z-1000">
+        <p className="legal-quote text-[16.5px] xs:text-[19px] ms:text-2xl text-[#2D201A] custom-shadow-mobile px-2 xs:px-3 py-2">
           {t('quote')}
         </p>
-        <button onClick={handleMobileMenu} className="hover-state">
-          <IoMenu size={30} />
+        <button onClick={handleMobileMenu} className="icon hover-state">
+          <IoMenu size={25} />
         </button>
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-8 h-screen z-1000">
+        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-5 xs:px-8 ms:px-10 h-screen z-1000">
           <div className="flex justify-between items-start">
             <Image
               src="/logo.svg"
@@ -98,15 +98,18 @@ export default function Header() {
               height={80}
               className="ml-[-12px]"
             />
-            <button onClick={handleMobileMenu} className="mt-[9px] hover-state">
-              <IoCloseOutline size={30} />
+            <button
+              onClick={handleMobileMenu}
+              className="mt-[9px] hover-state icon"
+            >
+              <IoCloseOutline size={25} />
             </button>
           </div>
-          <ul className="mobile-nav-menu flex flex-col text-xl gap-5 my-12">
+          <ul className="mobile-nav-menu flex flex-col text-lg ms:text-xl gap-3 xs:gap-5 my-8 xs:my-12">
             {links.map((link) => renderMobileNavItem(link))}
           </ul>
           <LanguageSwitcher />
-          <ul className="flex gap-5 mt-15">
+          <ul className="flex gap-5 mt-8 xs:mt-15">
             {socialSvgContacts.map((socialLink) => (
               <li
                 key={socialLink.href}
