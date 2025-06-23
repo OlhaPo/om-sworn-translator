@@ -16,18 +16,15 @@ export default function AboutMePage() {
   );
 
   return (
-    <div className="about flex-wrap flex flex-col md:flex-row flex-grow items-center">
-      <div className="mx-auto max-w-[1200px] 2xl:max-w-[1400px] px-5 xs:px-8 ms:px-10">
-        <h2
-          className="text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mt-15 md:mt-0 md:mb-5 uppercase md:normal-case font-medium md:font-light"
-          style={{ fontFamily: 'var(--font-playfair-display)' }}
-        >
+    <div className="about flex-wrap flex flex-col xl:flex-row flex-grow items-center">
+      <div className="mx-auto max-w-[1200px] 2xl:max-w-[1400px] px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20">
+        <h2 className="title text-[26px] md:text-5xl 3xl:text-5xl text-[#704B40] text-center tracking-widest md:tracking-custom mt-15 xl:mt-0 md:mb-5 uppercase md:normal-case font-medium md:font-light">
           {t('page-title')}
         </h2>
-        <div className="flex flex-wrap justify-between mb-15 md:mt-0">
+        <div className="flex flex-wrap justify-between mb-15 xl:mt-0">
           {aboutPageData.map((data, index) => (
             <div
-              className="about-me-card-animate mt-10 md:mt-15 custom-shadow-card rounded-md px-5 xs:px-8 ms:px-10 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:w-[30%]"
+              className="about-me-card-animate mt-10 md:mt-15 custom-shadow-card rounded-md px-5 xs:px-8 ms:px-10 md:px-6 py-6 md:py-8 bg-[#ffffff]/60 md:mx-auto md:w-[80%] xl:w-[30%]"
               key={data.imgUrl}
               style={{ animationDelay: `${index * 400}ms` }}
             >
@@ -37,6 +34,7 @@ export default function AboutMePage() {
                 height={50}
                 alt={data.imgAlt}
                 className="block mx-auto md:w-[65px] md:h-[65px]"
+                quality={75}
               />
               <h3 className="text-lg md:text-xl mt-6 mb-2 text-[#704B40] font-medium">
                 {data.title}

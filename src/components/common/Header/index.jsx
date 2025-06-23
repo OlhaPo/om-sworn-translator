@@ -79,8 +79,8 @@ export default function Header() {
         </ul>
       </div>
 
-      <div className="lg:hidden flex justify-between items-center py-4 px-5 xs:px-8 ms:px-10 z-1000">
-        <p className="legal-quote text-[16.5px] xs:text-[19px] ms:text-2xl text-[#2D201A] custom-shadow-mobile px-2 xs:px-3 py-2">
+      <div className="lg:hidden flex justify-between items-center py-4 px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 sm:py-6 z-1000">
+        <p className="legal-quote text-[16.5px] xs:text-[19px] ms:text-2xl md:text-3xl text-[#2D201A] custom-shadow-mobile px-2 py-2 xs:px-3 sm:px-5">
           {t('quote')}
         </p>
         <button onClick={handleMobileMenu} className="icon hover-state">
@@ -89,14 +89,15 @@ export default function Header() {
       </div>
 
       {isMobileMenuOpen && (
-        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-5 xs:px-8 ms:px-10 h-screen z-1000">
+        <div className="absolute bg-[#A98573] w-full top-0 bottom-0 flex flex-col pt-4 px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 h-screen z-1000 sm:py-6">
           <div className="flex justify-between items-start">
             <Image
               src="/logo.svg"
               alt="logo"
               width={80}
               height={80}
-              className="ml-[-12px]"
+              className="sm:w-24 sm:h-24 ml-[-12px]"
+              quality={75}
             />
             <button
               onClick={handleMobileMenu}
@@ -105,7 +106,7 @@ export default function Header() {
               <IoCloseOutline size={25} />
             </button>
           </div>
-          <ul className="mobile-nav-menu flex flex-col text-lg ms:text-xl gap-3 xs:gap-5 my-8 xs:my-12">
+          <ul className="mobile-nav-menu flex flex-col text-lg ms:text-xl sm:text-[22px] gap-3 xs:gap-5 my-8 xs:my-12">
             {links.map((link) => renderMobileNavItem(link))}
           </ul>
           <LanguageSwitcher />
@@ -125,7 +126,8 @@ export default function Header() {
                     width={28}
                     height={28}
                     alt="social svg"
-                    className="md:w-8 md:h-8"
+                    className="sm:w-8 sm:h-8"
+                    quality={75}
                   />
                 </a>
               </li>

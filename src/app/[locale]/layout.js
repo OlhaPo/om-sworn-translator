@@ -6,9 +6,9 @@ import {
   Bad_Script,
 } from 'next/font/google';
 import { notFound } from 'next/navigation';
+// eslint-disable-next-line import/named
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 
-// import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
 import ConditionalFooter from '@/components/ConditionalFooter';
 import { routing } from '@/i18n/routing';

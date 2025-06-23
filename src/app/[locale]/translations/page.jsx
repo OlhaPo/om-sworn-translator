@@ -17,14 +17,11 @@ export default function TranslationsPage() {
           width={600}
           height={400}
           alt="sworn translator stamp"
-          priority
-          className="mx-auto md:max-h-[400px] object-contain md:custom-shadow"
+          className="mx-auto md:max-h-[400px] object-contain md:custom-shadow sm:px-5 md:px-0"
+          quality={75}
         />
 
-        <h2
-          className="text-[24px] md:text-[44px] 3xl:text-5xl text-[#704B40] mt-10 md:mt-15 text-center tracking-wide md:tracking-custom uppercase md:normal-case font-medium md:font-light px-8 md:px-0 leading-15"
-          style={{ fontFamily: 'var(--font-playfair-display)' }}
-        >
+        <h2 className="title text-[24px] md:text-[44px] 3xl:text-5xl text-[#704B40] mt-10 md:mt-15 text-center tracking-wide md:tracking-custom uppercase md:normal-case font-medium md:font-light px-8 md:px-0 leading-15">
           {t('page-title')}
         </h2>
         <p>
@@ -46,10 +43,7 @@ export default function TranslationsPage() {
         </p>
 
         <p className="mb-10">{t('paragraph-3')}</p>
-        <h3
-          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-3xl pb-6 tracking-widest px-8 md:px-0"
-          style={{ fontFamily: 'var(--font-playfair-display)' }}
-        >
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center xl:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl pb-6 tracking-widest px-8 md:px-15 xl:px-0">
           {t('where-required-title')}
         </h3>
         <ul className="mb-10">
@@ -62,10 +56,7 @@ export default function TranslationsPage() {
             </li>
           ))}
         </ul>
-        <h3
-          className="text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-3xl py-6 tracking-widest px-8 md:px-0"
-          style={{ fontFamily: 'var(--font-playfair-display)' }}
-        >
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center xl:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-8 md:px-15 xl:px-0">
           {t('we-offer-title')}
         </h3>
         <ul>

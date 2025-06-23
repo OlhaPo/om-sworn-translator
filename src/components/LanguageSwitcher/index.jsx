@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <ul className="flex text-lg 2xl:text-xl 3xl:text-2xl">
+    <ul className="flex text-lg ms:text-xl sm:text-[22px] 2xl:text-xl 3xl:text-2xl">
       <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('uk')}
