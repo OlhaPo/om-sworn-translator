@@ -16,7 +16,7 @@ export default function ContactsPage() {
 
   return (
     <div className="contacts flex flex-grow text-lg md:text-2xl items-center overflow-x-hidden">
-      <div className="mx-auto flex flex-col xl:flex-row gap-8 md:gap-15 w-full px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 xl:px-0">
+      <div className="mx-auto max-w-[1200px] flex flex-col xl:flex-row gap-8 md:gap-15 w-full px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 xl:px-0">
         <div className="md:pr-40">
           <h2 className="title text-3xl md:text-5xl text-[#704B40] text-left tracking-widest md:tracking-custom mt-15 mb-10 xl:mt-0 md:mb-15 uppercase md:normal-case font-medium md:font-light">
             {t('page-title')}
@@ -29,7 +29,7 @@ export default function ContactsPage() {
               <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
             </li>
             <li>
-              <a href="mailto:tlumaczmarchenko@gmail.com">{EMAIL}</a>
+              <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
             </li>
           </ul>
           <ul className="mt-10 md:mt-15 flex gap-5 md:gap-8">
