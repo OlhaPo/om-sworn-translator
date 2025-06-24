@@ -16,7 +16,7 @@ export default function NavDropdown({ link }) {
       </DropdownMenu.Trigger>
 
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="bg-[#A98573] uppercase pt-2 2xl:pt-4 text-white text-[16px] 2xl:text-xl 3xl:text-2xl px-3 2xl:px-4">
+        <DropdownMenu.Content className="bg-[#A98573] uppercase pt-2 2xl:pt-4 text-white text-[16px] lg:text-lg 2xl:text-xl 3xl:text-2xl px-3 2xl:px-4">
           {link.children.map((item, i) => (
             <DropdownMenu.Item
               key={i}

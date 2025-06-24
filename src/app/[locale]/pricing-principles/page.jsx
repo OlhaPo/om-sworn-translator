@@ -8,8 +8,8 @@ export default function PricingPrinciplesPage() {
   const principles = usePricingPrinciplesData();
   return (
     <div className="prices flex flex-col md:flex-row flex-grow">
-      <div className="mx-auto max-w-[1200px] px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 xl:px-0 mb-20 xl:mb-0">
-        <h2 className="title text-[28px] md:text-5xl text-[#2D201A]  text-center tracking-widest md:tracking-custom mt-15 mb-10 md:mt-20  md:mb-15 uppercase md:normal-case font-medium md:font-light">
+      <div className="mx-auto max-w-[1200px] px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 2xl:px-0 mb-20 2xl:mb-0">
+        <h2 className="title text-[28px] md:text-5xl text-[#2D201A] text-center tracking-widest md:tracking-custom mt-15 mb-10 md:mt-20 md:mb-15 uppercase md:normal-case font-medium md:font-light">
           {t('page-title')}
         </h2>
         {principles.map((principle) => (
@@ -20,7 +20,7 @@ export default function PricingPrinciplesPage() {
         ))}
         <p>{t('paragraph-final')}</p>
         <div className="relative">
-          <div className="border-[#615c5a] border mt-10 md:mt-20 w-[80%] xs:w-[75%] md:w-[85%] xl:w-[90%]"></div>{' '}
+          <div className="border-[#615c5a] border mt-10 md:mt-20 w-[80%] xs:w-[75%] md:w-[85%] lg:w-[90%]"></div>{' '}
           <Image
             src="/calculator.svg"
             width={50}

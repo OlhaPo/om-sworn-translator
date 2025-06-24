@@ -57,9 +57,9 @@ export default function Header() {
 
   return (
     <nav className="custom-shadow bg-[#A98573] text-white">
-      <div className="w-full hidden items-center lg:flex lg:justify-between md:px-10 2xl:px-0 py-6 3xl:py-8 mx-auto 2xl:max-w-[1400px]">
+      <div className="w-full hidden items-center lg:flex lg:justify-between md:px-10 lg:px-20 2xl:px-0 py-6 3xl:py-8 mx-auto max-w-[1200px] 2xl:max-w-[1400px]">
         <LanguageSwitcher />
-        <ul className="flex text-[16px] 2xl:text-xl 3xl:text-2xl gap-8 2xl:gap-22 uppercase">
+        <ul className="flex text-[16px] lg:text-lg 2xl:text-xl 3xl:text-2xl gap-8 lg:gap-10 2xl:gap-22 uppercase">
           {links.map((link, i) =>
             link.isDropdownMenu ? (
               <li key={i}>

@@ -43,7 +43,7 @@ export default function TranslationsPage() {
         </p>
 
         <p className="mb-10">{t('paragraph-3')}</p>
-        <h3 className="title text-[#704B40] uppercase font-semibold text-center xl:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl pb-6 tracking-widest px-8 md:px-15 xl:px-0">
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center lg:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl pb-6 tracking-widest px-8 md:px-15 lg:px-20 2xl:px-0">
           {t('where-required-title')}
         </h3>
         <ul className="mb-10">
@@ -56,7 +56,7 @@ export default function TranslationsPage() {
             </li>
           ))}
         </ul>
-        <h3 className="title text-[#704B40] uppercase font-semibold text-center xl:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-8 md:px-15 xl:px-0">
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center lg:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-8 md:px-15 lg:px-20 2xl:px-0">
           {t('we-offer-title')}
         </h3>
         <ul>

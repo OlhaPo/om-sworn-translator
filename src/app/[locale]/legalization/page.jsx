@@ -25,7 +25,7 @@ export default function LegalizationPage() {
         </h2>
         <p>{t('paragraph-1')}</p>
         <p>{t('paragraph-2')}</p>
-        <div className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 xl:px-5 mt-10">
+        <div className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5 mt-10">
           {services.map((service) => (
             <div className="flex mb-8 items-center" key={service.title}>
               <span className="legalization-page-icon">{service.icon}</span>
@@ -33,10 +33,10 @@ export default function LegalizationPage() {
             </div>
           ))}
         </div>
-        <h3 className="title text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-5 xs:px-8 ms:px-10 md:px-20 xl:px-5">
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-5 xs:px-8 ms:px-10 md:px-20 lg:px-25 2xl:px-5">
           {t('advantages-title')}
         </h3>
-        <ul className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 xl:px-5">
+        <ul className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5">
           {advantages.map((advantage) => (
             <li className="flex items-center mb-3" key={advantage.title}>
               <span className="pr-4">

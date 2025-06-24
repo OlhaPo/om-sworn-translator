@@ -6,8 +6,8 @@ export default function Footer() {
   const contactInfo = useContactInfo();
 
   return (
-    <footer className="2xl:w-full py-4 hidden xl:block custom-shadow bg-[#A98573] text-white">
-      <div className="2xl:text-xl 2xl:max-w-[1400px] mx-auto flex justify-between">
+    <footer className="2xl:w-full py-4 hidden xl:block custom-shadow bg-[#A98573] text-white px-20">
+      <div className="text-lg 2xl:text-xl 2xl:max-w-[1400px] mx-auto flex justify-center 2xl:justify-between">
         <ul className="flex justify-center gap-10">
           {contactInfo.map((value) => (
             <li key={value.title} className="flex gap-2 items-center">
@@ -16,11 +16,11 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <ul className="flex justify-center gap-8">
+        <ul className="hidden 2xl:flex justify-center xl:gap-4 2xl:gap-8">
           {socialLinksFooter.map((socialLink) => (
             <li
               key={socialLink.href}
-              className="hover-state flex gap-2 items-center"
+              className="hover-state flex gap-1 2xl:gap-2 items-center"
             >
               <a
                 href={socialLink.href}
