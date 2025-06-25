@@ -11,7 +11,7 @@ export default function TranslationsPage() {
   const { places, offers } = useTranslationsPageData();
   return (
     <div className="translations flex flex-col md:flex-row flex-grow">
-      <div className="mx-auto md:max-w-[1200px] my-15 md:my-20">
+      <div className="mx-auto md:max-w-[1200px] 2xl:max-w-[1400px] my-15 md:my-20">
         <Image
           src="/sworn-translator-stamp.jpg"
           width={600}

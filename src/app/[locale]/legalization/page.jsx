@@ -10,7 +10,7 @@ export default function LegalizationPage() {
   const { services, advantages } = useLegalizationPageData();
   return (
     <div className="legalization flex flex-col md:flex-row flex-grow">
-      <div className="mx-auto md:max-w-[1200px] my-15 md:my-20">
+      <div className="mx-auto md:max-w-[1200px] 2xl:max-w-[1400px] my-15 md:my-20">
         <Image
           src="/legalization.jpg"
           width={600}
@@ -25,7 +25,7 @@ export default function LegalizationPage() {
         </h2>
         <p>{t('paragraph-1')}</p>
         <p>{t('paragraph-2')}</p>
-        <div className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5 mt-10">
+        <div className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5 3xl:px-10 mt-10">
           {services.map((service) => (
             <div className="flex mb-8 items-center" key={service.title}>
               <span className="legalization-page-icon">{service.icon}</span>
@@ -33,10 +33,10 @@ export default function LegalizationPage() {
             </div>
           ))}
         </div>
-        <h3 className="title text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-5 xs:px-8 ms:px-10 md:px-20 lg:px-25 2xl:px-5">
+        <h3 className="title text-[#704B40] uppercase font-semibold text-center md:text-left text-xl xs:text-[22px] md:text-[28px] xl:text-3xl py-6 tracking-widest px-5 xs:px-8 ms:px-10 md:px-20 lg:px-25 2xl:px-5 3xl:px-10">
           {t('advantages-title')}
         </h3>
-        <ul className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5">
+        <ul className="px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 lg:px-25 2xl:px-5 3xl:px-10">
           {advantages.map((advantage) => (
             <li className="flex items-center mb-3" key={advantage.title}>
               <span className="pr-4">

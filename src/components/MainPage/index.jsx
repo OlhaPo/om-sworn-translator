@@ -13,17 +13,17 @@ export default function MainPage() {
           height={120}
           quality={75}
           priority
-          className="mx-auto mt-8 md:mt-15 xl:mt-[-25px] sm:w-[170px] sm:h-[170px] 2xl:w-[195px] 2xl:h-[195px] 3xl:w-[210px] 3xl:h-[210px] md:mb-12 block order-2 md:order-1"
+          className="mx-auto mt-8 md:mt-15 xl:mt-[-25px] sm:w-[170px] sm:h-[170px] 2xl:w-[195px] 2xl:h-[195px] 3xl:w-[250px] 3xl:h-[250px] md:mb-12 block order-2 md:order-1"
         />
-        <h1 className="title flex flex-wrap justify-center gap-4 text-4xl ms:text-5xl sm:text-6xl 2xl:text-7xl md:mt-0 mt-6 mb-4 md:mb-5 text-[#704B40] custom-text-shadow text-center order-2 md:tracking-wide">
+        <h1 className="title flex flex-wrap justify-center gap-4 text-4xl ms:text-5xl sm:text-6xl 2xl:text-7xl 3xl:text-[85px] md:mt-0 mt-6 mb-4 md:mb-5 text-[#704B40] custom-text-shadow text-center order-2 md:tracking-wide">
           {t('title-name')} {t('title-surname')}
         </h1>
-        <h2 className="title text-2xl ms:text-3xl sm:text-4xl text-[#704B40] md:mb-12 text-center order-3 leading-7 ms:leading-10 md:tracking-wide">
+        <h2 className="title text-2xl ms:text-3xl sm:text-4xl 3xl:text-5xl text-[#704B40] md:mb-12 text-center order-3 leading-7 ms:leading-10 3xl:leading-15 md:tracking-wide">
           {t.rich('subtitle', {
             br: () => <br />,
           })}
         </h2>
-        <p className="legal-quote hidden text-center xl:block xl:text-3xl 2xl:text-4xl xl:py-0 text-[#926D4C] xl:mt-2 tracking-wide order-1 md:order-4">
+        <p className="legal-quote hidden text-center xl:block xl:text-3xl 2xl:text-4xl 3xl:text-[40px] xl:py-0 text-[#926D4C] xl:mt-2 tracking-wide order-1 md:order-4">
           &quot; {t('quote')} &quot;
         </p>
       </div>

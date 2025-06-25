@@ -6,8 +6,8 @@ export default function Footer() {
   const contactInfo = useContactInfo();
 
   return (
-    <footer className="2xl:w-full py-4 hidden xl:block custom-shadow bg-[#A98573] text-white px-20">
-      <div className="text-lg 2xl:text-xl 2xl:max-w-[1400px] mx-auto flex justify-center 2xl:justify-between">
+    <footer className="2xl:w-full py-4 3xl:py-6 hidden xl:block custom-shadow bg-[#A98573] text-white px-20">
+      <div className="text-lg 2xl:text-xl 3xl:text-2xl max-w-[1200px] 2xl:max-w-[1400px] mx-auto flex justify-center 2xl:justify-between">
         <ul className="flex justify-center gap-10">
           {contactInfo.map((value) => (
             <li key={value.title} className="flex gap-2 items-center">

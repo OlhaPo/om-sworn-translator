@@ -2,7 +2,7 @@ import { GOOGLE_MAP_LOCATION } from '@/constants/contacts';
 
 export default function GoogleMapLocation() {
   return (
-    <div className="mb-15 xl:mb-0 pt-5 md:pt-0 cursor-pointer w-full max-w-full 2xl:max-w-[650px]">
+    <div className="mb-15 xl:mb-0 pt-5 md:pt-0 cursor-pointer w-full max-w-full ">
       <a
         href={GOOGLE_MAP_LOCATION}
         target="_blank"
@@ -15,7 +15,7 @@ export default function GoogleMapLocation() {
           style={{ pointerEvents: 'none' }}
           allowFullScreen=""
           loading="lazy"
-          className="border-none custom-shadow rounded-md w-full h-[300px] md:h-[400px]"
+          className="border-none custom-shadow rounded-md w-full h-[300px] md:h-[400px] 3xl:h-[500px]"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </a>

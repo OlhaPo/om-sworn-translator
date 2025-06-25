@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
       <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('uk')}
-          className={locale === 'uk' ? 'text-[#f0ebe8] font-semibold' : ''}
+          className={locale === 'uk' ? 'text-[#725346] font-semibold' : ''}
         >
           UK
         </button>{' '}
@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
       <li className="hover-state">
         <button
           onClick={() => handleLanguageChange('pl')}
-          className={locale === 'pl' ? 'text-[#f0ebe8] font-semibold' : ''}
+          className={locale === 'pl' ? 'text-[#725346] font-semibold' : ''}
         >
           PL
         </button>

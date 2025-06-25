@@ -5,7 +5,8 @@
   --breakpoint-xs: 23.9375rem; /* 383px */
   --breakpoint-ms: 33.75rem; /* 540px */
   --breakpoint-xl: 74.625rem; /*1194px */
-  --breakpoint-2xl: 85.375rem; /*1366px */
+  --breakpoint-xl-1366: 85.375rem; /*1366px */
+  --breakpoint-2xl: 100rem; /*1600px */
   --breakpoint-3xl: 125rem; /* 2000px */
   --tracking-custom: 0.13em;
 }
@@ -115,12 +116,12 @@
   .legalization li,
   .legalization span,
   .translations li {
-    @apply text-base xs:text-lg md:text-xl xl:text-[22px] text-[#2D201A];
+    @apply text-base xs:text-lg md:text-xl xl:text-[22px] 3xl:text-2xl text-[#2D201A];
   }
 
   .legalization p,
   .translations p {
-    @apply pt-5 xs:pt-10 px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 2xl:px-0 text-base xs:text-lg md:text-xl xl:text-[22px] text-[#2D201A];
+    @apply pt-5 xs:pt-10 px-5 xs:px-8 ms:px-10 sm:px-15 md:px-20 2xl:px-0 text-base xs:text-lg md:text-xl xl:text-[22px] 3xl:text-2xl text-[#2D201A];
   }
 
   .translations p:last-of-type {
@@ -145,7 +146,7 @@
   }
 
   .prices p {
-    @apply text-base xs:text-lg md:text-xl lg:text-xl xl:text-[22px] text-[#2D201A];
+    @apply text-base xs:text-lg md:text-xl lg:text-xl xl:text-[22px] 3xl:text-2xl text-[#2D201A];
   }
 
   @keyframes slide-in {
@@ -161,7 +162,7 @@
 }
 
 .hover-state {
-  @apply hover:cursor-pointer hover:text-[#725346] active:text-[#725346] transition duration-300;
+  @apply hover:cursor-pointer hover:text-[#dfd9d6] active:text-[#725346] transition duration-300;
 }
 
 nav .icon svg {
