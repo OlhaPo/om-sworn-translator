@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Головна -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl/about</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk/about</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contacts -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl/contacts</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk/contacts</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legalization -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl/legalization</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk/legalization</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pricing Principles -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl/pricing-principles</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk/pricing-principles</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Translations -->
+  <url>
+    <loc>https://olenamarchenko.pl/pl/translations</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://olenamarchenko.pl/uk/translations</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

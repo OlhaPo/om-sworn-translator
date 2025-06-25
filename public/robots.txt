@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://olenamarchenko.pl/
+
+# Sitemaps
+Sitemap: https://olenamarchenko.pl/sitemap.xml
