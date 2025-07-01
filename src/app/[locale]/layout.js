@@ -39,6 +39,9 @@ export const metadata = {
   title: 'Олена Марченко — присяжний перекладач української мови',
   description:
     'Переклад документів та комплексна підтримка легалізації перебування і роботи в Польщі згідно з чинним законодавством.',
+  icons: {
+    icon: { url: '/favicon.png', sizes: '64x64', type: 'image/png' },
+  },
 };
 
 export default async function RootLayout({ children, params }) {
