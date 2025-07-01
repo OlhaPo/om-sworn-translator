@@ -11,8 +11,22 @@ export default function Footer() {
         <ul className="flex justify-center gap-10">
           {contactInfo.map((value) => (
             <li key={value.title} className="flex gap-2 items-center">
-              {value.label}
-              {value.title}
+              {value.href ? (
+                <>
+                  {value.label}
+                  <a
+                    href={value.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {value.title}
+                  </a>
+                </>
+              ) : (
+                <>
+                  {value.label} {value.title}
+                </>
+              )}
             </li>
           ))}
         </ul>

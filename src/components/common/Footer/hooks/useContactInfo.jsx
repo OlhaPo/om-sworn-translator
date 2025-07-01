@@ -20,7 +20,10 @@ const useContactInfo = () => {
       label: <MdOutlinePhone size={25} />,
       title: PHONE_NUMBER,
     },
-    { label: <MdOutlineMail size={25} />, title: EMAIL },
+    {
+      label: <MdOutlineMail size={25} />,
+      title: EMAIL,
+    },
   ];
   return contactInfo;
 };
